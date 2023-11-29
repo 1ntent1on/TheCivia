@@ -1,0 +1,892 @@
+menu_title: "&8▶ &0Market - Jiné &8◀"
+
+size: 54
+
+items:
+
+
+
+     
+
+
+
+
+  "Blaze":
+    material: tripwire_hook  
+    priority: 2
+    slot: 11
+    display_name: "&8[&c&lKlíč - Skin Bedna&8]"
+    lore:
+     - ""
+     - "&7Zakup si virtuální klíč, který slouží "
+     - "&7k otevření &cSkin Bedny&7. "
+     - ""
+     - ""
+     - "&7Cena: &c42 &7Tokenů "
+     - ""
+     - "&8(Skin Bedna obsahuje skiny na různé itemy) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 42'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Klíč** - **Skin Bedna** za **42 Tokenů**."    
+    - "[console] ecobits take %player_name% token 42"   
+    - "[console] ecocrates give %player_name% skinbedna virtual 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis klíč od Skin Bedny! Tvé klíče: &c%ecocrates_skinbedna_keys%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "Blaze2":
+    material: leather
+    model_data: 18
+    priority: 2
+    slot: 10
+    display_name: "&8[&c&lReset Skinu&8]"
+    lore:
+     - ""
+     - "&7Item, který ti umožní odebrat skin z tvého "
+     - "&7itemu. "
+     - ""
+     - ""
+     - "&7Cena: &c10 &7Tokenů "
+     - ""
+     - "&8(Skin obdržíš zpět) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 10'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Reset Skinu** za **10 Tokenů**."    
+    - "[console] ecobits take %player_name% token 10"   
+    - "[console] wraps give unwrapper %player_name% 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis Reset Skinu!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+
+
+
+  "Pinata":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBmZGZhNjBjNjI0ZmI2NjdjODMxM2IyZmIxZGFiNDBlMGFkMmU2ZTQ2OWI1NjdiZjU5NmFkMjYzOTIzMTljNSJ9fX0=
+    priority: 2
+    slot: 12
+    display_name: "&8[&c&lPiñata&8]"
+    lore:
+    - ""  
+    - "&7Klikni pro vyvolání Piñaty za cenu &c180&7 Tokenů. "
+    - ""   
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 180'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Vyvolání Piñaty** za **180 Tokenů**."    
+    - "[console] ecobits take %player_name% token 180"   
+    - "[console] pinataparty spawn spawn"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis Vyvolání Piñaty!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+  "P1":
+    material: paper
+    model_data: 1
+    slot: 19
+    display_name: "&8[&c&lDekorace - Allay&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Allay** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_allay 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P2":
+    material: paper
+    model_data: 2
+    slot: 20
+    display_name: "&8[&c&lDekorace - Axolotl&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Axolotl** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_axolotl 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P3":
+    material: paper
+    model_data: 3
+    slot: 21
+    display_name: "&8[&c&lDekorace - Bee&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Bee** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_bee 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P4":
+    material: paper
+    model_data: 4
+    slot: 22
+    display_name: "&8[&c&lDekorace - Chicken&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Chicken** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_chicken 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P5":
+    material: paper
+    model_data: 5
+    slot: 23
+    display_name: "&8[&c&lDekorace - Cow&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Cow** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_cow 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P6":
+    material: paper
+    model_data: 6
+    slot: 24
+    display_name: "&8[&c&lDekorace - Fox&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Fox** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_fox 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P7":
+    material: paper
+    model_data: 7
+    slot: 25
+    display_name: "&8[&c&lDekorace - Parrot&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Parrot** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_parrot 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+  "P8":
+    material: paper
+    model_data: 8
+    slot: 28
+    display_name: "&8[&c&lDekorace - Pig&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Pig** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_pig 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P9":
+    material: paper
+    model_data: 9
+    slot: 29
+    display_name: "&8[&c&lDekorace - Sheep&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Sheep** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_sheep 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+  "P10":
+    material: paper
+    model_data: 10
+    slot: 30
+    display_name: "&8[&c&lDekorace - Turtle&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Turtle** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_turtle 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P11":
+    material: paper
+    model_data: 11
+    slot: 31
+    display_name: "&8[&c&lDekorace - Camel&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Camel** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_camel 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+  "P12":
+    material: paper
+    model_data: 15
+    slot: 32
+    display_name: "&8[&c&lDekorace - Horse&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Horse** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_horse 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+  "P13":
+    material: paper
+    model_data: 16
+    slot: 33
+    display_name: "&8[&c&lDekorace - Mooshroom&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Mooshroom** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_mooshroom 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+  "P14":
+    material: paper
+    model_data: 14
+    slot: 34
+    display_name: "&8[&c&lDekorace - Frog&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Frog** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_frog 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P15":
+    material: paper
+    model_data: 18
+    slot: 37
+    display_name: "&8[&c&lDekorace - Rabbit&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Rabbit** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_rabbit 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P16":
+    material: paper
+    model_data: 12
+    slot: 38
+    display_name: "&8[&c&lDekorace - Cat&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Cat** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_cat 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P17":
+    material: paper
+    model_data: 20
+    slot: 39
+    display_name: "&8[&c&lDekorace - Wolf&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Wolf** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_wolf 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+  "P18":
+    material: paper
+    model_data: 19
+    slot: 40
+    display_name: "&8[&c&lDekorace - Sniffer&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Sniffer** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_sniffer 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+  "P19":
+    material: paper
+    model_data: 13
+    slot: 41
+    display_name: "&8[&c&lDekorace - Dolphin&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Dolphin** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_dolphin 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+
+  "P20":
+    material: paper
+    model_data: 17
+    slot: 42
+    display_name: "&8[&c&lDekorace - Panda&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Panda** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_panda 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+  "P21":
+    material: paper
+    model_data: 21
+    slot: 43
+    display_name: "&8[&c&lDekorace - Creeper&8]"
+    lore:
+    - ""  
+    - "&7Zakup si tuto dekoraci za cenu &c15&7 Tokenů. "
+    - ""
+    - ""
+    - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+    - ""          
+
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Dekorace - Creeper** za **15 Tokenů**."    
+    - "[console] ecobits take %player_name% token 15"   
+    - "[console] mm items give -s %player_name% nm_plushie_creeper 1"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis dekoraci!"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]" 
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé doplňky '
+    - "&7za &cTokeny&7. "
+    - "&7"
+    - "&7Tokeny si můžeš zakoupit na: "
+    - "&cwww.obchod.thecivia.net "
+    - ""
+    - "&7Tvé tokeny:&c %ecobits_token% "
+    - ""
+    - "&8Klikni pro získání odkazu v chatu. "
+    - ""
+    left_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"          
+    right_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"   
+
+
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] market-jine2'      
+   
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] market-jine2'      
+#    right_click_commands:
+#    - '[openmenu] recepty3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

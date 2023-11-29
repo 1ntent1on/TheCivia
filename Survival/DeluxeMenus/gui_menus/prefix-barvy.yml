@@ -1,0 +1,191 @@
+menu_title: "&8▶ &0Barva Prefixu &8◀"
+open_requirement:
+  requirements:
+    example_1:
+      type: has permission
+      permission: vip.suffixy 
+  deny_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče. "
+
+
+size: 54
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Gold":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5Zjk1YjZjMTY1MmRlODAwODQ1YzFkMjMxNWJiMGZjMzAyMDRiNDZlZGIzNzNmMWI2M2RlNjMxODEwN2JkZSJ9fX0=
+    slot: 16
+    display_name: "&8[&c&lZlatá x Žlutá&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#FFAA04&lVIP&e %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#FFAA04}&lVIP&e"'   
+    - "[refresh]"  
+
+  "Yellow":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ1MzA5YTg0OTI3NDdhMDFiYWEwNTViYjM4ZjI1Y2YwMTIwMTI1NzExNDFjMjQ4NDBjYjc2ZGE1NjBkZmM4NiJ9fX0=
+    slot: 25
+    display_name: "&8[&c&lŽlutá x Zlatá&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#FFFF59&lVIP&6 %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#FFFF59}&lVIP&6"'   
+    - "[refresh]"  
+
+
+
+  "DarkBlue":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBhM2FkZmRlYjBlNzBhNGQ3MmE4NmQ2ODYwYjc4NWIzODcxNmQxMzM1YmRkOGY4YzljYTQ1NzM4OTk5Y2Q5ZiJ9fX0=
+    slot: 11
+    display_name: "&8[&c&lTmavě Modrá x Modrá&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#5555FA&lVIP&1 %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"     
+    - '[console] lp user %player_name% meta addprefix 11 "{#5555FA}&lVIP&9"'      
+    - "[refresh]"  
+
+
+
+  "Blue":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjBlOTlkZjlhNjBiYzQxNTMyMTE4ZTkyYzEzOGRlODQ0YTliMWE5NmFkYmQyYzJiNjc1N2Y3NjhmYTA5ZDIyYyJ9fX0=
+    slot: 20
+    display_name: "&8[&c&lModrá x Tmavě Modrá&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#0000AE&lVIP&9 %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#0000AE}&lVIP&1"'   
+    - "[refresh]"  
+
+
+
+
+
+  "Green":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQ5NDI4MDc1OTMyOGIxMDdjMGJmMTU5OGE1MjQ4NzgyNzQyZjU2MGEyY2RiMzZhYzU5ZjAzZThiYTY1YWU5YiJ9fX0=
+    slot: 10
+    display_name: "&8[&c&lTmavě Zelená x Zelená&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#00AA04&lVIP&a %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#00AA04}&lVIP&a"'   
+    - "[refresh]"  
+
+  "lGreen":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzczOTM1ZmE3NDljMjNiYWM5YTExMDM5OWM0NjZmMTllYzQwNTZhZGM5ZTZjMzk5YjcwNWY1MzU3YjNiZDQwYSJ9fX0=
+    slot: 19
+    display_name: "&8[&c&lZelená x Tmavě Zelená&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#55FF59&lVIP&2 %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#55FF59}&lVIP&2"'   
+    - "[refresh]"  
+
+  "fialova":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYwYmE1MGIxZDFkNGM4M2FkZjI5ZmQ3ZTBmN2JlMjllMzI4NjNjN2Q3MDgyNzliMTY2MjVkMjgwNWYxZTgwMiJ9fX0=
+    slot: 15
+    display_name: "&8[&c&lTmavě Fialová x Fialová&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#AA00AE&lVIP&d %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#AA00AE}&lVIP&d"'   
+    - "[refresh]"  
+
+  "fsialova":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNkYjMxYTdjN2E4YWJjN2RhOGNjOWM1ZTY5Yzg0NmU2OGUxNzJiYzBhMjMxNGYyZDIwYmVlYTM4M2E4M2I2YSJ9fX0=
+    slot: 24
+    display_name: "&8[&c&lFialová x Tmavě Fialová&8]"
+    lore:
+    - ""
+    - "&7Budeš vypadat následovně:"
+    - "&#FF55FA&lVIP&5 %cmi_user_name% %vault_suffix%"
+    - ""
+    - "&7Klikni pro použití. "
+    - ""
+    click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"        
+    - '[console] lp user %player_name% meta addprefix 11 "{#FF55FA}&lVIP&5"'   
+    - "[refresh]"  
+
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2    
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7Jelikož jsi VIP hráč, "
+    - "&7můžeš si vybrat barvu "
+    - "&7prefix dle libosti! "
+    - ""   
+    - ""     
+    - "&7Klikni pro resetování. "
+    - ""
+    left_click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"     
+    - "[refresh]"
+    right_click_commands:
+    - "[console] lp user %player_name% meta removeprefix 11"    
+    - "[refresh]"     
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

@@ -1,0 +1,139 @@
+menu_title: "&8▶ &0Mobové &8◀"
+
+size: 54
+
+items:
+
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7Na serveru můžeš najít různé "
+    - "&7speciální variace všech mobů. "
+    - ""
+    - "&7Pro odemknutí dané položky "
+    - "&7musíš vzácnou variaci moba "
+    - "&7alespoň 1x zabít. "
+    - ""
+    - "&7Vzácní mobové mají lepší "
+    - "&7dropy než jejich normální "
+    - "&7varianty."
+    - ""                                          
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] pinata2'      
+    right_click_commands:
+    - '[openmenu] pinata2'      
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] pinata2'      
+    right_click_commands:
+    - '[openmenu] pinata2'  
+
+
+
+
+  'Zombie-Nic':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+    slot: 10
+    priority: 3
+    display_name: "&8[&c&lZombie&8]" 
+    lore:
+    - ''
+    - '&7Objevy: '
+    - "&c☒&7 Vzácné"
+    - "&c☒&7 Legendární"
+    - ""
+    - "&7Celkem zabito: &c%cmi_user_stats_MonsterKills:Zombie%"
+    - "" 
+  'Zombie-Leg':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==
+    slot: 10
+    priority: 2
+    display_name: "&8[&c&lZombie&8]" 
+    lore:
+    - ''
+    - '&7Objevy: '
+    - "&c☒&7 Vzácné"
+    - "&a☑&7 Legendární"
+    - ""
+    - "&7Celkem zabito: &c%cmi_user_stats_MonsterKills:Zombie%"
+    - "" 
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: survival.mobove.zombie.legendarni
+  'Zombie-Vzacne':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==
+    slot: 10
+    priority: 1
+    display_name: "&8[&c&lZombie&8]" 
+    lore:
+    - ''
+    - '&7Objevy: '
+    - "&a☑&7 Vzácné"
+    - "&c☒&7 Legendární"
+    - ""
+    - "&7Celkem zabito: &c%cmi_user_stats_MonsterKills:Zombie%"
+    - "" 
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: survival.mobove.zombie.vzacne
+  'Zombie-Vse':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==
+    slot: 10
+    priority: 0
+    display_name: "&8[&c&lZombie&8]" 
+    lore:
+    - ''
+    - '&7Objevy: '
+    - "&a☑&7 Vzácné"
+    - "&a☑&7 Legendární"
+    - ""
+    - "&7Celkem zabito: &c%cmi_user_stats_MonsterKills:Zombie%"
+    - "" 
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: survival.mobove.zombie.vzacne
+        2:
+          type: "has permission"
+          permission: survival.mobove.zombie.legendarni
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53
+

@@ -1,0 +1,319 @@
+menu_title: "&8▶ &0Létání &8◀"
+
+size: 36
+
+items:
+
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 31
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7Každý může na serveru "
+    - "&clétat&7! "
+    - ""
+    - "&7Pro létání ovšem musíš "
+    - "&7mít dostatek &cenergie&7. "
+    - "&7Tu si zde můžeš koupit za "
+    - "&cXP&7 nebo &cherní peníze&7. "
+    - ""
+    - "&7Momentálně máš: &c%cmi_user_flightcharge%&7 energie. "              
+    - ""     
+    - "&7Létání funguje &cpouze v hlavním "
+    - "&7světě! "
+    - ""                               
+
+
+
+  'Penize':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0=
+    slot: 11
+    priority: 3
+    display_name: "&8[&c&lEnergie za Peníze&8]" 
+    lore:
+    - ''
+    - '&7Kup si energii za peníze! '
+    - ""
+    - "&7Cena &c1 jednotka energie &7za&c 2$&7. "
+    - ""
+    - "&7Levé kliknutí&c +1 "
+    - "&7Shift + Levé kliknutí&c +10" 
+    - '&7Pravé kliknutí&c +100 '
+    - "&7Shift + Pravé kliknutí&c +1000 "
+    - ""  
+
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 2'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    shift_left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 20'       
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 200'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    shift_right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 2000'     
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 2"     
+    - "[console] cmi flightcharge add %player_name% 1 -s"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"     
+
+    shift_left_click_commands: 
+    - "[takemoney] 20" 
+    - "[console] cmi flightcharge add %player_name% 10 -s"    
+    - "[refresh]"             
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"     
+
+    right_click_commands: 
+    - "[takemoney] 200" 
+    - "[console] cmi flightcharge add %player_name% 100 -s"    
+    - "[refresh]"            
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"     
+
+    shift_right_click_commands: 
+    - "[takemoney] 2000" 
+    - "[console] cmi flightcharge add %player_name% 1000 -s"    
+    - "[refresh]"            
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"     
+
+
+
+
+  'Penize2':
+    material: red_wool
+    slot: 11
+    priority: 2
+    display_name: "&8[&c&lEnergie za peníze&8]" 
+    lore:
+    - ''
+    - '&7Tvé látací energie je&c plná7! '
+    - ""
+
+
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_flightcharge% >= 25000'
+
+
+
+
+  'Zkusenosti':
+    material: experience_bottle
+    slot: 15
+    priority: 3
+    display_name: "&8[&c&lEnergie za XP&8]" 
+    lore:
+    - ''
+    - '&7Kup si energii za XP! '
+    - ""
+    - "&7Cena je &c1 jednotka energie &7za&c 2XP&7. "
+    - ""
+    - "&7Levé kliknutí&c +1 "
+    - "&7Shift + Levé kliknutí&c +10" 
+    - '&7Pravé kliknutí&c +100 '
+    - "&7Shift + Pravé kliknutí&c +1000 "
+    - ""   
+
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_totalexp% >= 2'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek XP." 
+    shift_left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_totalexp% >= 20'       
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek XP." 
+
+    right_click_requirement:
+     requirements:
+      100:
+       type: javascript
+       expression: '%cmi_user_totalexp% >= 200'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek XP." 
+    shift_right_click_requirement:
+     requirements:
+      1k:
+       type: javascript
+       expression: '%cmi_user_totalexp% >= 2000'     
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek XP." 
+
+
+
+    left_click_commands:       
+    - "[takeexp] 2" 
+    - "[console] cmi flightcharge add %player_name% 1 -s"
+    - "[refresh]"       
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"         
+    shift_left_click_commands:        
+    - "[takeexp] 20" 
+    - "[console] cmi flightcharge add %player_name% 10 -s"
+    - "[refresh]"    
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"          
+    right_click_commands:         
+    - "[takeexp] 200" 
+    - "[console] cmi flightcharge add %player_name% 100 -s"
+    - "[refresh]"    
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"         
+    shift_right_click_commands:           
+    - "[takeexp] 2000" 
+    - "[console] cmi flightcharge add %player_name% 1000 -s"
+    - "[refresh]"    
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis létací energii! Momentálně máš:&c %cmi_user_flightcharge%&7 energie.<delay=40>"             
+
+  'Zkusenosti2':
+    material: red_wool
+    slot: 15
+    priority: 2
+    display_name: "&8[&c&lEnergie za XP&8]" 
+    lore:
+    - ''
+    - '&7Tvá energie je &c plná&7! '
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_flightcharge% >= 25000'
+
+
+
+  'adop':
+    material: elytra
+    slot: 13
+    priority: 5
+    display_name: "&8[&c&lAutomatické Doplňování&8]" 
+    lore:
+    - ''
+    - '&7Nebaví tě si pořád kupovat energii? '
+    - "&7Pak si zapni &cAutomatické Doplňování&7!"
+    - ""
+    - "&7Díky této funkci vždy budeš mít "
+    - "&7dostatek energie! "
+    - ""
+    - "&cPravé kliknutí&7 pro zapnutí doplňování "
+    - "&7za &cpeníze&7! "
+    - ""
+    - "&cLevé kliknutí&7 pro zapnutí doplňování "
+    - "&7za &cXP&7! "
+    - ""  
+    left_click_commands:       
+    - "[console] lp user %player_name% permission set letani.automaticke.xp true server=survival" 
+    - "[console] autorecharge %player_name% exp -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Nyná máš zaplé automatické doplňování za XP." 
+    - "[refresh]"    
+    right_click_commands:       
+    - "[console] lp user %player_name% permission set letani.automaticke.penize true server=survival" 
+    - "[console] autorecharge %player_name% money -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aNyní máš automatické doplňování za peníze." 
+    - "[refresh]"   
+
+
+  'adopp':
+    material: green_wool
+    slot: 13
+    priority: 4
+    display_name: "&8[&c&lAutomatické Doplňování&8]" 
+    lore:
+    - ''
+    - '&7Momentálně máš zapnuté automatické '
+    - "&7doplňování za &cpeníze&7. "
+    - ""
+    - "&7Klikni pro vypnutí! "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: letani.automaticke.penize
+    left_click_commands:       
+    - "[console] lp user %player_name% permission unset letani.automaticke.penize server=survival" 
+    - "[console] autorecharge %player_name% off -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Již nemáš zaplé automatické doplňování." 
+    - "[refresh]"             
+    right_click_commands:       
+    - "[console] lp user %player_name% permission unset letani.automaticke.penize server=survival" 
+    - "[console] autorecharge %player_name% off -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Již nemáš zaplé automatické doplňování." 
+    - "[refresh]"      
+
+
+
+  'adopxp':
+    material: green_wool
+    slot: 13
+    priority: 2
+    display_name: "&8[&c&lAutomatické Doplňování&8]" 
+    lore:
+    - ''
+    - '&7Momentálně máš zapnuté automatické '
+    - "&7doplňování za &cXP&7. "
+    - ""
+    - "&7Klikni pro vypnutí! "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: letani.automaticke.xp
+    left_click_commands:       
+    - "[console] lp user %player_name% permission unset letani.automaticke.xp server=survival" 
+    - "[console] autorecharge %player_name% off -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Již nemáš zaplé automatické doplňování." 
+    - "[refresh]"             
+    right_click_commands:       
+    - "[console] lp user %player_name% permission unset letani.automaticke.xp server=survival" 
+    - "[console] autorecharge %player_name% off -s"
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Již nemáš zaplé automatické doplňování." 
+    - "[refresh]"     
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-35
+

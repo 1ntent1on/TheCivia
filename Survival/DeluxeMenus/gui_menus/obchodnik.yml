@@ -1,0 +1,226 @@
+menu_title: "&8▶ &0Obchodník &8◀"
+
+size: 27
+
+items:
+
+
+                              
+
+
+  'Obvykle':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE5ZTM2YTg3YmFmMGFjNzYzMTQzNTJmNTlhN2Y2M2JkYjNmNGM4NmJkOWJiYTY5Mjc3NzJjMDFkNGQxIn19fQ==
+    slot: 11
+    display_name: "&8[&c&lDalší Land&8]" 
+    lore:
+    - ''
+    - '&7Zakup si pro sebe další land! '
+    - ""
+    - "&7Cena: &c2 000 000$"
+    - ""  
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 2000000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 2000000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další land!"             
+    - "[console] money take %player_name% 2000000"
+    - "[console] lands admin player %player_name% give permission ownlands 1"    
+    - "[refresh]"                          
+    left_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další land!"             
+    - "[console] money take %player_name% 2000000"
+    - "[console] lands admin player %player_name% give permission ownlands 1"  
+    - "[refresh]"
+
+
+  'Prace1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc4YTFjZjJkMmUyNjgxYjVmMmNkMDdhOWM1YjY1YWE4MjliNTg1MTk1Y2E3OWNhOWExOTJiNjNlZmVmMGE4In19fQ==
+    slot: 15
+    priority: 5
+    display_name: "&8[&c&lDalší Práce&8]" 
+    lore:
+    - ''
+    - '&7Zakup si možnost mít další práci! '
+    - ""
+    - "&7Cena: &c50 000$"
+    - ""  
+    - "&7Momentálně máš: &c%ecojobs_limit%&7 prací. "
+    - ""
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission set ecojobs.limit.3 true server=survival"    
+    - "[refresh]"                          
+    left_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission set ecojobs.limit.3 true server=survival"    
+    - "[refresh]" 
+
+
+  'Prace2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc4YTFjZjJkMmUyNjgxYjVmMmNkMDdhOWM1YjY1YWE4MjliNTg1MTk1Y2E3OWNhOWExOTJiNjNlZmVmMGE4In19fQ==
+    slot: 15
+    priority: 4
+    display_name: "&8[&c&lDalší Práce&8]" 
+    lore:
+    - ''
+    - '&7Zakup si možnost mít další práci! '
+    - ""
+    - "&7Cena: &c50 000$"
+    - ""  
+    - "&7Momentálně máš: &c%ecojobs_limit%&7 prací. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: ecojobs.limit.3
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission unset ecojobs.limit.3 server=survival"
+    - "[console] lp user %player_name% permission set ecojobs.limit.4 true server=survival"    
+    - "[refresh]"                          
+    left_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission unset ecojobs.limit.3 server=survival"    
+    - "[console] lp user %player_name% permission set ecojobs.limit.4 true server=survival"    
+    - "[refresh]" 
+
+
+  'Prace3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc4YTFjZjJkMmUyNjgxYjVmMmNkMDdhOWM1YjY1YWE4MjliNTg1MTk1Y2E3OWNhOWExOTJiNjNlZmVmMGE4In19fQ==
+    slot: 15
+    priority: 3
+    display_name: "&8[&c&lDalší Práce&8]" 
+    lore:
+    - ''
+    - '&7Zakup si možnost mít další práci! '
+    - ""
+    - "&7Cena: &c50 000$"
+    - ""  
+    - "&7Momentálně máš: &c%ecojobs_limit%&7 prací. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: ecojobs.limit.4
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 50000'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek peněz." 
+
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission unset ecojobs.limit.4 server=survival"
+    - "[console] lp user %player_name% permission set ecojobs.limit.5 true server=survival"    
+    - "[refresh]"                          
+    left_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aZakoupil sis další práci!"             
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission unset ecojobs.limit.4 server=survival"    
+    - "[console] lp user %player_name% permission set ecojobs.limit.5 true server=survival"    
+    - "[refresh]" 
+
+
+  'Prace4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc4YTFjZjJkMmUyNjgxYjVmMmNkMDdhOWM1YjY1YWE4MjliNTg1MTk1Y2E3OWNhOWExOTJiNjNlZmVmMGE4In19fQ==
+    slot: 15
+    priority: 2
+    display_name: "&8[&c&lDalší Práce&8]" 
+    lore:
+    - ''
+    - '&7Dosáhl jsi momentálního maxima prací. '
+    - ""  
+    - "&7Momentálně máš: &c%ecojobs_limit%&7 prací. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: ecojobs.limit.5
+
+
+
+
+
+  filler-item:
+    priority: 26
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

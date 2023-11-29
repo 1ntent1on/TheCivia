@@ -1,0 +1,431 @@
+menu_title: "&8▶ &0Enchanty - Krumpáč &8◀"
+
+size: 54
+
+items:
+
+
+
+
+
+  "Ingot":
+    material: enchanted_book    
+    slot: 10
+    display_name: "&8[&c&lBennetova Kletba&8]"
+    lore:
+     - ""
+     - "&8Přidá &a15% &8šanci neobdržet vykopané blocky"
+     - ""
+     - "&7Cena: &c5 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 5'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 5"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:misfortune_curse,lvl:1}]} 1"    
+    - "[refresh]"    
+
+
+  "Ingot2":
+    material: enchanted_book    
+    slot: 11
+    display_name: "&8[&c&lDoživení&8]"
+    lore:
+     - ""
+     - "&8Doplní celý tvůj život"
+     - ""
+     - "&7Cena: &c15 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 15"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:vitality,lvl:1}]} 1"    
+    - "[refresh]"    
+
+
+  "Ingot3":
+    material: enchanted_book    
+    slot: 12
+    display_name: "&8[&c&lKletba Kopání&8]"
+    lore:
+     - ""
+     - "&8Dává &a15%&8 šanci nevykopat block"
+     - ""
+     - "&7Cena: &c5 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 5'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 5"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:breaklessness_curse,lvl:1}]} 1"    
+    - "[refresh]"   
+
+
+  "Ingot4":
+    material: enchanted_book    
+    slot: 13
+    display_name: "&8[&c&lKletba Věčnosti&8]"
+    lore:
+     - ""
+     - "&8Item nemůže být upraven v kovadlině"
+     - ""
+     - "&7Cena: &c5 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 5'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 5"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:permanence_curse,lvl:1}]} 1"    
+    - "[refresh]"   
+
+
+
+
+  "Ingot5":
+    material: enchanted_book    
+    slot: 14
+    display_name: "&8[&c&lMoudrost&8]"
+    lore:
+     - ""
+     - "&8Zvýší obdržené zkušenosti o &a160%"
+     - ""
+     - "&7Cena: &c10 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 10'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 10"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:wisdom,lvl:3}]} 1"    
+    - "[refresh]"   
+
+
+
+  "Ingot6":
+    material: enchanted_book    
+    slot: 15
+    display_name: "&8[&c&lOprava&8]"
+    lore:
+     - ""
+     - "&8Automaticky přidá &a3&8 výdrže každých &a1.5 &8vteřin"
+     - ""
+     - "&7Cena: &c15 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 15"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:repairing,lvl:3}]} 1"    
+    - "[refresh]"  
+
+
+
+  "Ingot7":
+    material: enchanted_book    
+    slot: 16
+    display_name: "&8[&c&lPouto&8]"
+    lore:
+     - ""
+     - "&8Zachová tento item při smrti"
+     - ""
+     - "&7Cena: &c15 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 15"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:soulbound,lvl:1}]} 1"    
+    - "[refresh]"  
+
+
+
+
+  "Ingot8":
+    material: enchanted_book    
+    slot: 17
+    display_name: "&8[&c&lArcheolog&8]"
+    lore:
+     - ""
+     - "&8Přidá &a15%&8 více zkušeností ke"
+     - "&8Kopání"
+     - ""
+     - "&7Cena: &c10 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 10'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 10"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:prospector,lvl:5}]} 1"    
+    - "[refresh]"  
+
+
+  "Ingot10":
+    material: enchanted_book    
+    slot: 19
+    display_name: "&8[&c&lBojovník&8]"
+    lore:
+     - ""
+     - "&8Přidá &a17.5%&8 více zkušeností k"
+     - "&8Boji"
+     - ""
+     - "&7Cena: &c10 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 10'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 10"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:combatant,lvl:3}]} 1"    
+    - "[refresh]"  
+
+
+
+  "Ingot11":
+    material: enchanted_book    
+    slot: 20
+    display_name: "&8[&c&lDotek Ohně&8]"
+    lore:
+     - ""
+     - "&8Automaticky vypálí vykopané blocky"
+     - ""
+     - "&7Cena: &c15 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 15"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:infernal_touch,lvl:1}]} 1"    
+    - "[refresh]"  
+
+
+
+
+
+  "Ingot12":
+    material: enchanted_book    
+    slot: 21
+    display_name: "&8[&c&lMorax&8]"
+    lore:
+     - ""
+     - "&8Přidá šanci &a75%&8 obdržet více"
+     - "&8itemů z ancient debris"
+     - ""
+     - "&7Cena: &c15 &7Playtime Tokenů "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 15'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    click_commands:
+    - "[console] ecobits take %player_name% playtime 15"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu! Nový zůstatek Playtime tokenů: &c%ecobits_playtime%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] give %player_name% enchanted_book{StoredEnchantments:[{id:nether_prospector,lvl:2}]} 1"    
+    - "[refresh]"  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé itemy '
+    - "&7za &cPlaytime tokeny&7. "
+    - "&7Ty automaticky získáš za "
+    - "&7odehraný čas na serveru. "
+    - "&7Vybrat si je můžeš přes &c/odmeny&7. "
+    - ""
+    - "&7Playtime tokeny:&c %ecobits_playtime% "
+    - ""
+
+
+#  'dalsi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+#    hide_attributes: true
+#    slot: 53
+#    display_name: "&8[&c&lDalší Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na další stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty2'      
+#    right_click_commands:
+#    - '[openmenu] recepty2'      
+#  'predchozi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+#    hide_attributes: true
+#    slot: 45
+#    display_name: "&8[&c&lPředchozí Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na předchozí stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty3'      
+#    right_click_commands:
+#    - '[openmenu] recepty3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

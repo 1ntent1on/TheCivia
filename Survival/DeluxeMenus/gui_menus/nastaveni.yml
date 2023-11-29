@@ -1,0 +1,313 @@
+menu_title: "&8▶ &0Nastavení &8◀"
+
+size: 27
+
+items:
+
+
+                              
+
+
+  'Obvykle':
+    material: diamond_pickaxe
+    slot: 10
+    priority: 2
+    display_name: "&8[&c&lDynamické Kopání&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti skill Dynamické Kopání? '
+    - "&7Zde si ho můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Dynamické Kopání je nyní &cVypnuté&7!"             
+    - "[console] lp user %player_name% permission set survival.skill.kopani.vypnuto true server=survival"    
+    - "[refresh]"                          
+
+
+  'Obvykle1':
+    material: diamond_pickaxe
+    slot: 10
+    priority: 1
+    display_name: "&8[&c&lDynamické Kopání&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti skill Dynamické Kopání? '
+    - "&7Zde si ho můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.skill.kopani.vypnuto
+
+
+    click_commands: 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Dynamické Kopání je nyní &aZapnuté&7!"             
+    - "[console] lp user %player_name% permission unset survival.skill.kopani.vypnuto server=survival"    
+    - "[refresh]"      
+
+
+  'Mapa':
+    material: map
+    slot: 11
+    priority: 2
+    display_name: "&8[&c&lViditelnost na Mapě&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti, že jsi vidět na mapě? '
+    - "&7Zde si to můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Nyní jsi na mapě &cSchovaný&7!"    
+    - '[console] squaremap hide %player_name%'         
+    - "[console] lp user %player_name% permission set survival.mapa.schovano true server=survival"    
+    - "[refresh]"                          
+
+
+  'Mapa1':
+    material: map
+    slot: 11
+    priority: 1
+    display_name: "&8[&c&lViditelnost na Mapě&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti, že jsi vidět na mapě? '
+    - "&7Zde si to můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.mapa.schovano
+
+
+    click_commands: 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Nyní jsi na mapě &aViditelný&7!"    
+    - '[console] squaremap show %player_name%'         
+    - "[console] lp user %player_name% permission unset survival.mapa.schovano server=survival"    
+    - "[refresh]"     
+
+
+
+
+  'Scoreboard':
+    material: paper
+    slot: 12
+    priority: 2
+    display_name: "&8[&c&lScoreboard&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti Scoreboard? '
+    - "&7Zde si jí můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[console] tab scoreboard off %player_name%"       
+    - "[console] lp user %player_name% permission set survival.scoreboard.vypnuto true server=survival"    
+    - "[refresh]"     
+
+  'Scoreboard2':
+    material: paper
+    slot: 12
+    priority: 1
+    display_name: "&8[&c&lScoreboard&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti Scoreboard? '
+    - "&7Zde si jí můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.scoreboard.vypnuto
+
+
+    click_commands: 
+    - "[console] tab scoreboard on %player_name%"        
+    - "[console] lp user %player_name% permission unset survival.scoreboard.vypnuto server=survival"    
+    - "[refresh]"   
+
+
+
+
+  'Enchanty':
+    material: enchanted_book
+    slot: 13
+    priority: 2
+    display_name: "&8[&c&lPopisky Enchantů&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti popisky u Enchantů? '
+    - "&7Zde si je můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[player] ecoenchants toggledescriptions"      
+    - "[console] lp user %player_name% permission set survival.enchanty.vypnuto true server=survival"    
+    - "[refresh]"    
+
+
+
+
+  'Scoreboard2s':
+    material: enchanted_book
+    slot: 13
+    priority: 1
+    display_name: "&8[&c&lPopisky Enchantů&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti popisky u Enchantů? '
+    - "&7Zde si je můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.enchanty.vypnuto
+
+
+    click_commands: 
+    - "[player] ecoenchants toggledescriptions"       
+    - "[console] lp user %player_name% permission unset survival.enchanty.vypnuto server=survival"    
+    - "[refresh]"     
+
+  'Enchantsday':
+    material: end_rod
+    slot: 14
+    priority: 2
+    display_name: "&8[&c&lSkill Actionbar&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti actionbar? '
+    - "&7Zde si jej můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[player] skills toggleactionbar"      
+    - "[console] lp user %player_name% permission set survival.skilly.actionbar.vypnuto true server=survival"    
+    - "[refresh]"    
+
+
+
+
+  'Scoreboaadsrd2s':
+    material: end_rod
+    slot: 14
+    priority: 1
+    display_name: "&8[&c&lSkill Actionbar&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti actionbar? '
+    - "&7Zde si jej můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.skilly.actionbar.vypnuto
+
+
+    click_commands: 
+    - "[player] skills toggleactionbar"    
+    - "[console] lp user %player_name% permission unset survival.skilly.actionbar.vypnuto server=survival"    
+    - "[refresh]"     
+
+  'pvp':
+    material: diamond_sword
+    slot: 15
+    priority: 2
+    display_name: "&8[&c&lPvP&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti PvP? '
+    - "&7Zde si jej můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &aZapnuto "
+    - ""  
+
+    click_commands: 
+    - "[console] pvp %player_name% off"        
+    - "[console] lp user %player_name% permission set survival.pvp.vypnuto true server=survival"    
+    - "[refresh]"    
+
+
+
+
+  'pvp2':
+    material: diamond_sword
+    slot: 15
+    priority: 1
+    display_name: "&8[&c&lPvP&8]" 
+    hide_attributes: true
+    lore:
+    - ''
+    - '&7Vadí ti PvP? '
+    - "&7Zde si jej můžeš vypnout či zapnout "
+    - "&7dle tvé potřeby! "
+    - ""
+    - "&7Momentálně: &cVypnuto "
+    - ""  
+    view_requirement:
+     requirements:
+      cobble:
+          type: "has permission"
+          permission: survival.pvp.vypnuto
+
+
+    click_commands: 
+    - "[console] pvp %player_name% on"    
+    - "[console] lp user %player_name% permission unset survival.pvp.vypnuto server=survival"    
+    - "[refresh]"     
+
+
+  filler-item:
+    priority: 26
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

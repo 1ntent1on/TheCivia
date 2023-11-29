@@ -1,0 +1,265 @@
+menu_title: "&8▶ &0Speciální Recepty &8◀"
+
+size: 54
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Quartz":
+    material: quartz
+    slot: 10
+    display_name: "&8[&c&lQuartz&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-quartz"        
+    right_click_commands:
+    - "[openguimenu] recepty-quartz"  
+
+  "nether_wart":
+    material: nether_wart
+    slot: 11
+    display_name: "&8[&c&lNether Wart&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-nether_wart"        
+    right_click_commands:
+    - "[openguimenu] recepty-nether_wart"  
+
+  "lily_pad":
+    material: lily_pad
+    slot: 12
+    display_name: "&8[&c&lLily Pad&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-lily_pad"        
+    right_click_commands:
+    - "[openguimenu] recepty-lily_pad"  
+
+  "shulker_shell":
+    material: shulker_shell
+    slot: 13
+    display_name: "&8[&c&lShulker Shell&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-shulker_shell"        
+    right_click_commands:
+    - "[openguimenu] recepty-shulker_shell"  
+
+  "IHA":
+    material: iron_horse_armor
+    slot: 14
+    display_name: "&8[&c&lIron Horse Armor&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-iha"        
+    right_click_commands:
+    - "[openguimenu] recepty-iha"  
+
+  "GHA":
+    material: golden_horse_armor
+    slot: 15
+    display_name: "&8[&c&lGolden Horse Armor&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-gha"        
+    right_click_commands:
+    - "[openguimenu] recepty-gha"  
+
+  "DHA":
+    material: diamond_horse_armor
+    slot: 16
+    display_name: "&8[&c&lDiamond Horse Armor&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-dha"        
+    right_click_commands:
+    - "[openguimenu] recepty-dha"  
+
+
+  "EGA":
+    material: enchanted_golden_apple
+    slot: 19
+    display_name: "&8[&c&lEnchanted Golden Apple&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-egapple"        
+    right_click_commands:
+    - "[openguimenu] recepty-egapple"  
+
+  "elytra":
+    material: elytra
+    slot: 20
+    display_name: "&8[&c&lElytra&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-elytra"        
+    right_click_commands:
+    - "[openguimenu] recepty-elytra"  
+
+  "EPF":
+    material: end_portal_frame
+    slot: 21
+    display_name: "&8[&c&lEnd Portal Frame&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-epf"        
+    right_click_commands:
+    - "[openguimenu] recepty-epf"  
+
+  "sponge":
+    material: sponge
+    slot: 22
+    display_name: "&8[&c&lSponge&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-sponge"        
+    right_click_commands:
+    - "[openguimenu] recepty-sponge"  
+
+  "portal1":
+    material: gold_nugget
+    slot: 23
+    display_name: "&8[&c&lTvořič portálu&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-portal1"        
+    right_click_commands:
+    - "[openguimenu] recepty-portal1"  
+
+  "portal2":
+    material: feather
+    slot: 24
+    display_name: "&8[&c&lKlíč k portálu&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-portal2"        
+    right_click_commands:
+    - "[openguimenu] recepty-portal2"  
+
+  "koral1":
+    material: tube_coral_block
+    slot: 28
+    display_name: "&8[&c&lTube Coral Block&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    click_commands:
+    - "[openguimenu] recepty-koral1"        
+
+  "koral2":
+    material: brain_coral_block
+    slot: 29
+    display_name: "&8[&c&lBrain Coral Block&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    click_commands:
+    - "[openguimenu] recepty-koral2"     
+
+  "koral3":
+    material: bubble_coral_block
+    slot: 30
+    display_name: "&8[&c&lBubble Coral Block&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    click_commands:
+    - "[openguimenu] recepty-koral3"
+
+  "koral4":
+    material: fire_coral_block
+    slot: 31
+    display_name: "&8[&c&lFire Coral Block&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    click_commands:
+    - "[openguimenu] recepty-koral4"
+
+  "koral5":
+    material: horn_coral_block
+    slot: 32
+    display_name: "&8[&c&lHorn Coral Block&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    click_commands:
+    - "[openguimenu] recepty-koral5"               
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2    
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7Zde nalezneš různé speciální "
+    - "&7recepty pro tvorbu itemů. "
+    - ""
+  
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

@@ -1,0 +1,197 @@
+menu_title: "&8▶ &0Odměny &8◀"
+
+size: 54
+
+
+items:
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš prohlédnout všechny '
+    - "&7odměny, které je momentálně možné "
+    - "&7získat z Piñaty. "
+    - ""
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] pinata'      
+    right_click_commands:
+    - '[openmenu] pinata'      
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] pinata'      
+    right_click_commands:
+    - '[openmenu] pinata'  
+
+  'diamond':
+    material: diamond
+    slot: 10
+    display_name: "&8[&c&lDiamond - 1x&8]"
+    lore: []
+  'diamond1':
+    material: diamond
+    slot: 11
+    display_name: "&8[&c&lDiamond - 2x&8]"
+    lore: []    
+  'diamond2':
+    material: diamond
+    slot: 12
+    display_name: "&8[&c&lDiamond - 4x&8]"
+    lore: []    
+  'diamond3':
+    material: diamond
+    slot: 13
+    display_name: "&8[&c&lDiamond - 5x&8]"
+    lore: []    
+  'diamond4':
+    material: diamond
+    slot: 14
+    display_name: "&8[&c&lDiamond - 8x&8]"
+    lore: []    
+  'diamond5':
+    material: diamond
+    slot: 15
+    display_name: "&8[&c&lDiamond - 10x&8]"
+    lore: []    
+  'diamond6':
+    material: diamond
+    slot: 16
+    display_name: "&8[&c&lDiamond - 16x&8]"
+    lore: []    
+
+  'iron_ingot':
+    material: iron_ingot
+    slot: 19
+    display_name: "&8[&c&lIron - 2x&8]"
+    lore: []
+  'iron_ingot1':
+    material: iron_ingot
+    slot: 20
+    display_name: "&8[&c&lIron - 4x&8]"
+    lore: []    
+  'iron_ingot2':
+    material: iron_ingot
+    slot: 21
+    display_name: "&8[&c&lIron - 5x&8]"
+    lore: []    
+  'iron_ingot3':
+    material: iron_ingot
+    slot: 22
+    display_name: "&8[&c&lIron - 8x&8]"
+    lore: []    
+  'iron_ingot4':
+    material: iron_ingot
+    slot: 23
+    display_name: "&8[&c&lIron - 16x&8]"
+    lore: []    
+  'iron_ingot5':
+    material: iron_ingot
+    slot: 24
+    display_name: "&8[&c&lIron - 32x&8]"
+    lore: []    
+  'iron_ingot6':
+    material: iron_ingot
+    slot: 25
+    display_name: "&8[&c&lIron - 64x&8]"
+    lore: []    
+
+  'gold_ingot':
+    material: gold_ingot
+    slot: 28
+    display_name: "&8[&c&lGold - 2x&8]"
+    lore: []
+  'gold_ingot1':
+    material: gold_ingot
+    slot: 29
+    display_name: "&8[&c&lGold - 4x&8]"
+    lore: []    
+  'gold_ingot2':
+    material: gold_ingot
+    slot: 30
+    display_name: "&8[&c&lGold - 5x&8]"
+    lore: []    
+  'gold_ingot3':
+    material: gold_ingot
+    slot: 31
+    display_name: "&8[&c&lGold - 8x&8]"
+    lore: []    
+  'gold_ingot4':
+    material: gold_ingot
+    slot: 32
+    display_name: "&8[&c&lGold - 16x&8]"
+    lore: []    
+  'gold_ingot5':
+    material: gold_ingot
+    slot: 33
+    display_name: "&8[&c&lGold - 32x&8]"
+    lore: []    
+  'gold_ingot6':
+    material: gold_ingot
+    slot: 34
+    display_name: "&8[&c&lGold - 64x&8]"
+    lore: []        
+  'netherite_scrap':
+    material: netherite_scrap
+    slot: 37
+    display_name: "&8[&c&lNetherite Scrap - 1x&8]"
+    lore: []
+  'netherite_scrap2':
+    material: netherite_scrap
+    slot: 38
+    display_name: "&8[&c&lNetherite Scrap - 2x&8]"
+    lore: []
+  'netherite_ingot':
+    material: netherite_ingot
+    slot: 39
+    display_name: "&8[&c&lNetherite Ingot - 1x&8]"
+    lore: []    
+  'emerald':
+    material: emerald
+    slot: 40
+    display_name: "&8[&c&lEmerald - 4x&8]"
+    lore: []
+  'emerald2':
+    material: emerald
+    slot: 41
+    display_name: "&8[&c&lEmerald - 10x&8]"
+    lore: []
+  'emerald3':
+    material: emerald
+    slot: 42
+    display_name: "&8[&c&lEmerald - 16x&8]"
+    lore: []
+  'emerald4':
+    material: emerald
+    slot: 43
+    display_name: "&8[&c&lEmerald - 32x&8]"
+    lore: []
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

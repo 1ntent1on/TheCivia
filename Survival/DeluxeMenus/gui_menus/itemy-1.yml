@@ -1,0 +1,74 @@
+menu_title: "&8▶ &0Speciální Itemy &8◀"
+
+
+open_command: itemy
+size: 27
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Warden":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNmMzY3NGIyZGRjMGVmN2MzOWUzYjljNmI1ODY3N2RlNWNmMzc3ZDJlYjA3M2YyZjNmZTUwOTE5YjFjYTRjOSJ9fX0=
+    slot: 11
+    display_name: "&8[&c&lWarden Itemy&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí Warden itemů. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] itemy-warden"        
+    right_click_commands:
+    - "[openguimenu] itemy-warden"  
+
+
+  "Warden1":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRhZmIyM2VmYzU3ZjI1MTg3OGU1MzI4ZDExY2IwZWVmODdiNzljODdiMjU0YTdlYzcyMjk2ZjkzNjNlZjdjIn19fQ==
+    slot: 13
+    display_name: "&8[&c&lWither Itemy&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí Wither itemů. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] itemy-wither"        
+    right_click_commands:
+    - "[openguimenu] itemy-wither"  
+
+
+  "Dragon":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZjZGFlNTg2YjUyNDAzYjkyYjE4NTdlZTQzMzFiYWM2MzZhZjA4YmFiOTJiYTU3NTBhNTRhODMzMzFhNjM1MyJ9fX0=
+    slot: 15
+    display_name: "&8[&c&lDragon Itemy&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí Dragon itemů. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] itemy-dragon"        
+    right_click_commands:
+    - "[openguimenu] itemy-dragon"  
+
+
+
+  
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

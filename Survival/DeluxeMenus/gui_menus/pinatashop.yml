@@ -1,0 +1,201 @@
+menu_title: "&8▶ &0Piñata Obchod &8◀"
+
+size: 54
+
+items:
+
+
+                              
+
+
+  'Totem':
+    material: totem_of_undying
+    slot: 10
+    display_name: "&8[&c&lTotem of Undying - 1x&8]" 
+    lore:
+    - ''
+    - '&7Cena: &c3x Piñata Coin'
+    - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 3'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 3'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 3"
+    - "[console] cmi give %player_name% totem_of_undying 1"    
+    - "[refresh]"    
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 3"
+    - "[console] cmi give %player_name% totem_of_undying 1"     
+    - "[refresh]"     
+  'Chytac1':
+    material: ghast_spawn_egg
+    slot: 11
+    display_name: "&8[&c&lChytač Mobů &7(&c&lJedno Použití&7)&c&l - 1x&8]" 
+    lore:
+    - ''
+    - '&7Cena: &c3x Piñata Coin'
+    - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 3'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 3'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 3"
+    - "[console] safarinet give %player_name% singleuse 1"    
+    - "[refresh]"    
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 3"
+    - "[console] safarinet give %player_name% singleuse 1"      
+    - "[refresh]"   
+  'Chytac2':
+    material: ghast_spawn_egg
+    slot: 12
+    display_name: "&8[&c&lChytač Mobů &7(&c&lJedno Použití&7)&c&l - 5x&8]" 
+    lore:
+    - ''
+    - '&7Cena: &c12x Piñata Coin'
+    - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 12'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 12'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 12"
+    - "[console] safarinet give %player_name% singleuse 5"    
+    - "[refresh]"    
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 12"
+    - "[console] safarinet give %player_name% singleuse 5"      
+    - "[refresh]"   
+  'Chytac3':
+    material: ghast_spawn_egg
+    slot: 13
+    enchantments:
+      - mending;1
+    hide_enchantments: true    
+    display_name: "&8[&c&lChytač Mobů &7(&c&lVíce Použití&7)&c&l - 1x&8]" 
+    lore:
+    - ''
+    - '&7Cena: &c50x Piñata Coin'
+    - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 50'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 50'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 50"
+    - "[console] safarinet give %player_name% reusable 1"    
+    - "[refresh]"    
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 50"
+    - "[console] safarinet give %player_name% reusable 1"       
+    - "[refresh]"   
+  'Netherite':
+    material: netherite_ingot
+    slot: 14   
+    display_name: "&8[&c&lNetherite Ingot - 1x&8]" 
+    lore:
+    - ''
+    - '&7Cena: &c5x Piñata Coin'
+    - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 5'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatacoin% >= 5'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Piñata Coinů." 
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 5"
+    - "[console] cmi give %player_name% netherite_ingot 1"    
+    - "[refresh]"    
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Piñata Obchodě!"             
+    - "[console] ecobits take %player_name% pinatacoin 5"
+    - "[console] cmi give %player_name% netherite_ingot 1"         
+    - "[refresh]"   
+
+
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    slot: 49
+    display_name: "&8[&c&lInfo&8]" 
+    lore:
+    - ''
+    - '&7Z Piñaty můžeš získat speciální coiny. '
+    - "&7Za ně si zde můžeš nakoupit dodatečné "
+    - "&7odměny."
+    - ""
+    - "&7Tvé Piñata Coiny: &c%ecobits_pinatacoin%"
+    - ""
+
+
+
+
+
+  filler-item:
+    priority: 26
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

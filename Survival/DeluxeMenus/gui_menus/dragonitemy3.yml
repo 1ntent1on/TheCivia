@@ -1,0 +1,306 @@
+menu_title: "&8▶ &0Dragon Nástroje &8◀"
+
+size: 27
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Ingot":
+    material: netherite_pickaxe
+    model_data: 1
+    slot: 10
+    display_name: "&8[&#CC00FA&lDragon Pickaxe&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c2x Dragon Ingot"
+     - "&7- &c1x Dragon Tooth"
+     - "&7- &c2x Stick"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#CC00FADragon Ingot"
+       modeldata: 2
+       amount: 2
+       name_contains: yes
+      cobble2:
+       type: has item
+       material: "flint"
+       name: "&#CC00FADragon Tooth"
+       modeldata: 1
+       amount: 1
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "stick"
+       amount: 2 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:2,namecontains:Dragon Ingot,custommodeldata:2%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:flint,amt:1,namecontains:Dragon Tooth,custommodeldata:1%"
+    - "[console] papi parse %player_name% %checkitem_remove_mat:stick,amt:2%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#CC00FA}Dragon Pickaxe"       
+    - "[console] ecoitems give %player_name% dragon_pickaxe"  
+    - "[refresh]" 
+
+
+  "Ingot2":
+    material: netherite_axe
+    model_data: 1
+    slot: 11
+    display_name: "&8[&#CC00FA&lDragon Axe&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c2x Dragon Ingot"
+     - "&7- &c1x Dragon Tooth"
+     - "&7- &c2x Stick"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#CC00FADragon Ingot"
+       modeldata: 2
+       amount: 2
+       name_contains: yes
+      cobble2:
+       type: has item
+       material: "flint"
+       name: "&#CC00FADragon Tooth"
+       modeldata: 1
+       amount: 1
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "stick"
+       amount: 2
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:2,namecontains:Dragon Ingot,custommodeldata:2%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:flint,amt:1,namecontains:Dragon Tooth,custommodeldata:1%"
+    - "[console] papi parse %player_name% %checkitem_remove_mat:stick,amt:2%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#CC00FA}Dragon Axe"       
+    - "[console] ecoitems give %player_name% dragon_axe"  
+    - "[refresh]" 
+
+  "Ingot4":
+    material: netherite_shovel
+    model_data: 1
+    slot: 12
+    display_name: "&8[&#CC00FA&lDragon Shovel&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c1x Dragon Tooth" 
+     - "&7- &c2x Stick"  
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble3:
+       type: has item
+       material: "stick"
+       amount: 2
+      cobble2:
+       type: has item
+       material: "flint"
+       name: "&#CC00FADragon Tooth"
+       modeldata: 1
+       amount: 1
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:flint,amt:1,namecontains:Dragon Tooth,custommodeldata:1%"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:stick,amt:2%"                         
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#CC00FA}Dragon Shovel"       
+    - "[console] ecoitems give %player_name% dragon_shovel"   
+    - "[refresh]" 
+
+
+
+  "Ingot32":
+    material: netherite_hoe
+    model_data: 1
+    slot: 13
+    display_name: "&8[&#CC00FA&lDragon Hoe&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c1x Dragon Ingot"
+     - "&7- &c1x Dragon Tooth"
+     - "&7- &c2x Stick"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#CC00FADragon Ingot"
+       modeldata: 2
+       amount: 1
+       name_contains: yes
+      cobble2:
+       type: has item
+       material: "flint"
+       name: "&#CC00FADragon Tooth"
+       modeldata: 1
+       amount: 1
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "stick"
+       amount: 2
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:1,namecontains:Dragon Ingot,custommodeldata:2%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:flint,amt:1,namecontains:Dragon Tooth,custommodeldata:1%"
+    - "[console] papi parse %player_name% %checkitem_remove_mat:stick,amt:2%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#CC00FA}Dragon Hoe"       
+    - "[console] ecoitems give %player_name% dragon_hoe"   
+    - "[refresh]" 
+
+
+
+  "Ingot3":
+    material: fishing_rod
+    model_data: 1
+    slot: 14
+    display_name: "&8[&#CC00FA&lDragon Fishing Rod&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c2x Dragon Ingot"
+     - "&7- &c1x Dragon Tooth"
+     - "&7- &c2x String"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#CC00FADragon Ingot"
+       modeldata: 2
+       amount: 2
+       name_contains: yes
+      cobble2:
+       type: has item
+       material: "flint"
+       name: "&#CC00FADragon Tooth"
+       modeldata: 1
+       amount: 1
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "string"
+       amount: 2
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:2,namecontains:Dragon Ingot,custommodeldata:2%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:flint,amt:1,namecontains:Dragon Tooth,custommodeldata:1%"
+    - "[console] papi parse %player_name% %checkitem_remove_mat:string,amt:2%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#CC00FA}Dragon Fishing Rod"       
+    - "[console] ecoitems give %player_name% dragon_rod"   
+    - "[refresh]" 
+
+
+
+
+
+
+
+
+
+
+  'dalsi-strana':
+    material: netherite_chestplate
+    hide_attributes: true
+    slot: 16
+    display_name: "&8[&c&lDragon Armor&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun do dalšího menu. '
+    - ""
+    left_click_commands:
+    - '[openmenu] dragonitemy'      
+    right_click_commands:
+    - '[openmenu] dragonitemy'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

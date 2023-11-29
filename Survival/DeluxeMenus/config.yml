@@ -1,0 +1,231 @@
+# DeluxeMenus 1.14.0-DEV-167 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: false
+gui_menus:
+  banka:
+    file: banka.yml
+  topvotes:
+    file: topvotes.yml
+  baltop:
+    file: baltop.yml
+  warpy:
+    file: warps.yml
+  letani:
+    file: letani.yml
+  suffix:
+    file: suffix.yml
+  barvy:
+    file: barvy.yml
+  recepty:
+    file: recepty.yml
+  nastaveni:
+    file: nastaveni.yml
+  recepty2:
+    file: recepty2.yml
+  pinata:
+    file: pinata.yml
+  pinata2:
+    file: pinata2.yml
+  vip:
+    file: vip.yml
+  prefix-barvy:
+    file: prefix-barvy.yml
+  checkpointy:
+    file: checkpoionty.yml
+  obchodnik:
+    file: obchodnik.yml
+  bludiste:
+    file: bludiste.yml
+  Pinaty:
+    file: pinaty.yml
+  PinataShop:
+    file: pinatashop.yml
+  Mobove1:
+    file: mobove1.yml
+  Itemy:
+    file: itemy-1.yml
+  Itemy-warden:
+    file: itemy-warden.yml
+  Itemy-dragon:
+    file: itemy-dragon.yml
+  Wardenitemy:
+    file: wardenitemy.yml
+  Wardenitemy2:
+    file: wardenitemy2.yml
+  Wardenitemy3:
+    file: wardenitemy3.yml
+  Dragonitemy:
+    file: dragonitemy.yml
+  Dragonitemy2:
+    file: dragonitemy2.yml
+  Dragonitemy3:
+    file: dragonitemy3.yml
+  Playtimeshop:
+    file: playtimeshop.yml
+  Witheritemy:
+    file: witheritemy.yml
+  Itemy-wither:
+    file: itemy-wither.yml
+  
+  Playtime1:
+    file: playtime/playtime1.yml
+  Playtime2:
+    file: playtime/playtime2.yml
+  
+  Enchanty-main:
+    file: enchant-menu/main.yml
+  Enchanty-krump:
+    file: enchant-menu/enchanty-krump.yml
+  Enchanty-lopata:
+    file: enchant-menu/enchanty-lopata.yml
+  Enchanty-mec:
+    file: enchant-menu/enchanty-mec.yml
+  Enchanty-axe:
+    file: enchant-menu/enchanty-axe.yml
+  Enchanty-hoe:
+    file: enchant-menu/enchanty-hoe.yml
+  Enchanty-luk:
+    file: enchant-menu/enchanty-luk.yml
+  Enchanty-kuse:
+    file: enchant-menu/enchanty-kuse.yml
+  Enchanty-helma:
+    file: enchant-menu/enchanty-helma.yml
+  Enchanty-chestplate:
+    file: enchant-menu/enchanty-chestplate.yml
+  Enchanty-kalhoty:
+    file: enchant-menu/enchanty-kalhoty.yml
+  Enchanty-boty:
+    file: enchant-menu/enchanty-boty.yml
+  Enchanty-trident:
+    file: enchant-menu/enchanty-trident.yml
+  Enchanty-nuzky:
+    file: enchant-menu/enchanty-nuzky.yml
+  Enchanty-shield:
+    file: enchant-menu/enchanty-shield.yml
+  Enchanty-elytra:
+    file: enchant-menu/enchanty-elytra.yml
+  
+  
+  Market:
+    file: market/market.yml
+  Market-vip:
+    file: market/market-vip.yml
+  Market-mazlicci:
+    file: market/market-mazlicci.yml
+  Market-doplnky:
+    file: market/market-doplnky.yml
+  Market-skiny:
+    file: market/market-skiny.yml
+  Market-jine:
+    file: market/market-jine.yml
+  Market-jine2:
+    file: market/market-jine2.yml
+  
+  
+  
+  
+  
+  barvy-srdce:
+    file: suffixy-barvy/srdce-barvy.yml
+  barvy-biohazard:
+    file: suffixy-barvy/biohazard-barvy.yml
+  barvy-hippie:
+    file: suffixy-barvy/hippie-barvy.yml
+  barvy-hvezda:
+    file: suffixy-barvy/hvezda-barvy.yml
+  barvy-lebka:
+    file: suffixy-barvy/lebka-barvy.yml
+  barvy-mesic:
+    file: suffixy-barvy/mesic-barvy.yml
+  barvy-sip:
+    file: suffixy-barvy/sip-barvy.yml
+  barvy-yinyang:
+    file: suffixy-barvy/yinyang-barvy.yml
+  barvy-letadlo:
+    file: suffixy-barvy/letadlo-barvy.yml
+  barvy-kriz:
+    file: suffixy-barvy/kriz-barvy.yml
+  barvy-biohazard2:
+    file: suffixy-barvy/biohazard2-barvy.yml
+  barvy-mec:
+    file: suffixy-barvy/mec-barvy.yml
+  
+  recepty-quartz:
+    file: recepty/recepty-quartz.yml
+  recepty-nether_wart:
+    file: recepty/recepty-nether_wart.yml
+  recepty-lily_pad:
+    file: recepty/recepty-lily_pad.yml
+  recepty-shulker_shell:
+    file: recepty/recepty-shulker_shell.yml
+  recepty-iha:
+    file: recepty/recepty-iha.yml
+  recepty-gha:
+    file: recepty/recepty-gha.yml
+  recepty-dha:
+    file: recepty/recepty-dha.yml
+  recepty-egapple:
+    file: recepty/recepty-egapple.yml
+  recepty-elytra:
+    file: recepty/recepty-elytra.yml
+  recepty-epf:
+    file: recepty/recepty-epf.yml
+  recepty-sponge:
+    file: recepty/recepty-sponge.yml
+  recepty-portal1:
+    file: recepty/portal-1.yml
+  recepty-portal2:
+    file: recepty/portal-2.yml
+  
+  recepty-wfragment:
+    file: recepty/wfragment.yml
+  recepty-whelmet:
+    file: recepty/whelmet.yml
+  recepty-wchestplate:
+    file: recepty/wchestplate.yml
+  recepty-wleggings:
+    file: recepty/wleggings.yml
+  recepty-wboots:
+    file: recepty/wboots.yml
+  
+  recepty-koral1:
+    file: recepty/koral1.yml
+  recepty-koral2:
+    file: recepty/koral2.yml
+  recepty-koral3:
+    file: recepty/koral3.yml
+  recepty-koral4:
+    file: recepty/koral4.yml
+  recepty-koral5:
+    file: recepty/koral5.yml
+  
+  recepty-dingot:
+    file: recepty/dingot.yml
+  recepty-wingot:
+    file: recepty/wingot.yml
+  recepty-dsword:
+    file: recepty/dsword.yml
+  recepty-dpickaxe:
+    file: recepty/dpickaxe.yml
+  recepty-daxe:
+    file: recepty/daxe.yml
+  recepty-dshovel:
+    file: recepty/dshovel.yml
+  recepty-drod:
+    file: recepty/drod.yml
+  recepty-dbow:
+    file: recepty/dbow.yml
+  recepty-dshield:
+    file: recepty/dshield.yml
+  recepty-dhelmet:
+    file: recepty/dhelmet.yml
+  recepty-dchestplate:
+    file: recepty/dchestplate.yml
+  recepty-dleggings:
+    file: recepty/dleggings.yml
+  recepty-dboots:
+    file: recepty/dboots.yml

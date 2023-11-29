@@ -1,0 +1,1081 @@
+menu_title: "&8▶ &0Suffixy &8◀"
+
+size: 54
+
+
+items:
+
+
+  "SrdceKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 10
+    display_name: "&8[&c&lSrdce&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&4 ❤ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.srdce true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cSrdce&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.srdce true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cSrdce&7!"    
+
+
+  "SrdceVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 10
+    display_name: "&8[&c&lSrdce&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&4 ❤ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.srdce
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+    left_click_commands:
+    - "[openmenu] barvy-srdce"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&4 ❤"'   
+    - "[refresh]"       
+
+
+
+  "lebkaVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 11
+    display_name: "&8[&c&lLebka&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&f ☠ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.lebka
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+
+    left_click_commands:
+    - "[openmenu] barvy-lebka"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&f ☠"'   
+    - "[refresh]"  
+
+
+  "lebkaKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 11
+    display_name: "&8[&c&lLebka&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&f ☠ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.lebka true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cLebka&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.lebka true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cLebka&7!"    
+
+
+  "hvezdaVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 12
+    display_name: "&8[&c&lHvězda&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&e ★ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.hvezda
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+
+    left_click_commands:
+    - "[openmenu] barvy-hvezda"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&e ★"'   
+    - "[refresh]"  
+
+
+  "hvezdaKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 12
+    display_name: "&8[&c&lHvězda&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&e ★ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.hvezda true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cHvězda&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.hvezda true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cHvězda&7!"    
+
+
+  "radioactiveVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 13
+    display_name: "&8[&c&lRadioaktivita&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&a ☢ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.biohazard
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+    left_click_commands:
+    - "[openmenu] barvy-biohazard"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&a ☢"'   
+    - "[refresh]"  
+
+
+  "biohazardKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 13
+    display_name: "&8[&c&lRadioaktivita&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&a ☢ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.biohazard true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cRadioaktivita&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.biohazard true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cRadioaktivita&7!"    
+
+  "mesicVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 14
+    display_name: "&8[&c&lMěsíc&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&e ☽ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.mesic
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+    left_click_commands:
+    - "[openmenu] barvy-mesic"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&e ☽"'   
+    - "[refresh]"  
+
+
+  "mesicKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 14
+    display_name: "&8[&c&lMěsíc&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&e ☽ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+        
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.mesic true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cMěsíc&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.mesic true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cMěsíc&7!"    
+
+  "yinyangVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 15
+    display_name: "&8[&c&lYin-Yang&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&b ☯ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.yinyang
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+    left_click_commands:
+    - "[openmenu] barvy-yinyang"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&b ☯"'   
+    - "[refresh]"  
+
+
+  "yinyangKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 15
+    display_name: "&8[&c&lYin-Yang&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&b ☯ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.yinyang true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cYin-Yang&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.yinyang true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cYin-Yang&7!"    
+
+
+  "sipVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 16
+    display_name: "&8[&c&lŠíp&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&6 ➹ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.sip
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+
+    left_click_commands:
+    - "[openmenu] barvy-sip"     
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&6 ➹"'   
+    - "[refresh]"  
+
+
+  "sipKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 16
+    display_name: "&8[&c&lŠíp&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&6 ➹ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.sip true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cŠíp&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.sip true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cŠíp&7!"    
+
+  "hippieVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 19
+    display_name: "&8[&c&lHippie&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&2 ☮ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.hippie
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+    left_click_commands:
+    - "[openmenu] barvy-hippie"        
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&2 ☮"'   
+    - "[refresh]"  
+
+
+  "hippieKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 19
+    display_name: "&8[&c&lHippie&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&2 ☮ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.hippie true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cHippie&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.hippie true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cHippie&7!"    
+
+  "letadloVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 20
+    display_name: "&8[&c&lLetadlo&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&1 ✈ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.letadlo
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+    left_click_commands:
+    - "[openmenu] barvy-letadlo"        
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&1 ✈"'   
+    - "[refresh]"  
+
+
+  "letadloKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 20
+    display_name: "&8[&c&lLetadlo&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&1 ✈ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.letadlo true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cLetadlo&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.letadlo true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cLetadlo&7!"  
+
+  "krizVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 21
+    display_name: "&8[&c&lKříž&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&d ✞ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.kriz
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+    left_click_commands:
+    - "[openmenu] barvy-kriz"        
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&d ✞"'   
+    - "[refresh]"  
+
+
+  "krizKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 21
+    display_name: "&8[&c&lKříž&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&d ✞ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.kriz true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cKříž&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.kriz true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cKříž&7!"    
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2    
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7Zde si můžeš zakoupi různé &csuffixy&7! "
+    - "&7Ty budou vidět za tvým jménem v chatu,"
+    - "&7v tabu a nad tvojí postavou. VIP hráči "
+    - "&7mají možnost změny barvy jejich suffixu."
+    - ""   
+    - "&7Momentálně používáš suffix:%vault_suffix% "
+    - ""     
+    - "&7Kliknutím momentální suffix odebereš."
+    - ""
+
+
+    left_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"     
+    - "[refresh]"
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"    
+    - "[refresh]"     
+
+  "biohazard2Vlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 22
+    display_name: "&8[&c&lBiohazard&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&3 ☣ "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.biohazard2
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+    left_click_commands:
+    - "[openmenu] barvy-biohazard2"        
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&3 ☣"'   
+    - "[refresh]"  
+
+
+  "biohazard2Koupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 22
+    display_name: "&8[&c&lBiohazard&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&3 ☣ "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.biohazard2 true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cBiohazard&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.biohazard2 true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cBiohazard&7!"  
+
+
+  "mecVlastnictvi":
+    material: name_tag
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - mending;1
+    priority: 1
+    slot: 23
+    display_name: "&8[&c&lMeč&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&c 🗡 "
+    - ""
+    - "&7Klikni &cpravým&7 pro aktivování. "
+    - "&7Klikni &clevým&7 pro změnu barvy. "
+    - ""    
+
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: suffixy.mec
+    left_click_requirement:
+     requirements:
+        2:
+          type: "has permission"
+          permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Tato funkce je pouze pro VIP hráče." 
+    left_click_commands:
+    - "[openmenu] barvy-mec"        
+
+    right_click_commands:
+    - "[console] lp user %player_name% meta removesuffix 11"        
+    - '[console] lp user %player_name% meta addsuffix 11 "&c 🗡"'   
+    - "[refresh]"  
+
+
+  "mecKoupe":
+    material: name_tag
+    hide_attributes: true
+    priority: 2
+    slot: 23
+    display_name: "&8[&c&lMeč&8]"
+    lore:
+    - ""
+    - "&7S tímto suffixem budeš "
+    - "&7vypadat následovně: "
+    - ""
+    - "%cmi_user_prefix% %cmi_user_name%&c 🗡 "
+    - ""
+    - "&7Cena suffixu: &c75000$"   
+    - ""
+    - "&cKlikni &cpro zakoupení. "
+    - ""    
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%vault_eco_balance% >= 75000'        
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek peněz." 
+
+
+    left_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.mec true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cMeč&7!"    
+
+    right_click_commands: 
+    - "[takemoney] 75000"     
+    - "[console] lp user %player_name% permission set suffixy.mec true server=survival"    
+    - "[refresh]"        
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis suffix &cMeč&7!"  
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

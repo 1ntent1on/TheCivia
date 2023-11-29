@@ -1,0 +1,247 @@
+menu_title: "&8▶ &0Warden Armor &8◀"
+
+size: 27
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Ingot":
+    material: leather_helmet
+    model_data: 2
+    slot: 10
+    display_name: "&8[&#004659&lWarden Helmet&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Uděl &c2x &7více poškození do wardenů"
+     - "&8» &7Obdrž o &c10% &7méně poškození"  
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c5x Warden Ingot"
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:5,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu." 
+     - "[console] cmi sound entity_villager_no %player_name%" 
+     - "[refresh]"             
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:5,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+    left_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Helmet"       
+    - "[console] ecoarmor give %player_name% set:warden helmet"  
+    - "[refresh]" 
+    right_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Helmet"       
+    - "[console] ecoarmor give %player_name% set:warden helmet"  
+    - "[refresh]" 
+
+
+
+  "Ingot1":
+    material: leather_chestplate
+    model_data: 2
+    slot: 11
+    display_name: "&8[&#004659&lWarden Chestplate&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Uděl &c2x &7více poškození do wardenů"
+     - "&8» &7Obdrž o &c10% &7méně poškození"  
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c8x Warden Ingot"
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:8,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu." 
+     - "[console] cmi sound entity_villager_no %player_name%" 
+     - "[refresh]"             
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:8,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+    left_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Chestplate"       
+    - "[console] ecoarmor give %player_name% set:warden chestplate"  
+    - "[refresh]" 
+    right_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Chestplate"       
+    - "[console] ecoarmor give %player_name% set:warden chestplate"  
+    - "[refresh]" 
+
+
+  "Ingot2":
+    material: leather_leggings
+    model_data: 2
+    slot: 12
+    display_name: "&8[&#004659&lWarden Leggings&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Uděl &c2x &7více poškození do wardenů"
+     - "&8» &7Obdrž o &c10% &7méně poškození"  
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c7x Warden Ingot"
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:7,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu." 
+     - "[console] cmi sound entity_villager_no %player_name%" 
+     - "[refresh]"             
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:7,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+    left_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Leggings"       
+    - "[console] ecoarmor give %player_name% set:warden leggings"  
+    - "[refresh]" 
+    right_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Leggings"       
+    - "[console] ecoarmor give %player_name% set:warden leggings"  
+    - "[refresh]" 
+
+
+
+  "Ingot3":
+    material: leather_boots
+    model_data: 2
+    slot: 13
+    display_name: "&8[&#004659&lWarden Boots&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Uděl &c2x &7více poškození do wardenů"
+     - "&8» &7Obdrž o &c10% &7méně poškození"  
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c4x Warden Ingot"
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:4,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu." 
+     - "[console] cmi sound entity_villager_no %player_name%" 
+     - "[refresh]"             
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:brick,amt:4,namecontains:Warden Ingot,custommodeldata:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+    left_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Boots"       
+    - "[console] ecoarmor give %player_name% set:warden boots"  
+    - "[refresh]" 
+    right_click_commands:
+    - "[message] &8[&c&lSurvival&8] &6&l» &aVyrobil sis nový item!"             
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Boots"       
+    - "[console] ecoarmor give %player_name% set:warden boots"  
+    - "[refresh]" 
+
+
+
+  'dalsi-strana':
+    material: netherite_sword
+    hide_attributes: true
+    slot: 16
+    display_name: "&8[&c&lWarden Zbraně&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun do dalšího menu. '
+    - ""
+    click_commands:
+    - '[openmenu] wardenitemy2'    
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

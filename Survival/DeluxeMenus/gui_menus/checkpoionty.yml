@@ -1,0 +1,276 @@
+menu_title: "&8▶ &0Checkpointy &8◀"
+
+size: 54
+
+
+items:
+
+
+  "CH1-1":
+    material: red_wool
+    hide_attributes: true
+    priority: 2
+    slot: 10
+    display_name: "&8[&c&lCheckpoint I&8]"
+    lore:
+    - ""
+    - "&7Tento checkpoint nemáš odemčený. "
+    - ""
+
+
+  "CH1-2":
+    material: green_wool
+    hide_attributes: true
+    priority: 1
+    slot: 10
+    display_name: "&8[&c&lCheckpoint I&8]"
+    lore:
+    - ""
+    - "&7Teleportuj se na checkpoint. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.1
+
+    left_click_commands:
+    - "[console] cmi warp %player_name% checkpoint1 -s"        
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] cmi warp %player_name% checkpoint1 -s"        
+    - "[close]"       
+
+
+  "CH2-1":
+    material: red_wool
+    hide_attributes: true
+    priority: 2
+    slot: 13
+    display_name: "&8[&c&lCheckpoint II&8]"
+    lore:
+    - ""
+    - "&7Tento checkpoint nemáš odemčený. "
+    - ""
+
+
+  "CH2-2":
+    material: green_wool
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: "&8[&c&lCheckpoint II&8]"
+    lore:
+    - ""
+    - "&7Teleportuj se na checkpoint. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.2
+
+    left_click_commands:
+    - "[console] cmi warp %player_name% checkpoint2 -s"        
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] cmi warp %player_name% checkpoint2 -s"        
+    - "[close]"     
+
+
+  "CH3-1":
+    material: red_wool
+    hide_attributes: true
+    priority: 2
+    slot: 16
+    display_name: "&8[&c&lCheckpoint III&8]"
+    lore:
+    - ""
+    - "&7Tento checkpoint nemáš odemčený. "
+    - ""
+
+
+  "CH3-2":
+    material: green_wool
+    hide_attributes: true
+    priority: 1
+    slot: 16
+    display_name: "&8[&c&lCheckpoint III&8]"
+    lore:
+    - ""
+    - "&7Teleportuj se na checkpoint. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.3
+
+    left_click_commands:
+    - "[console] cmi warp %player_name% checkpoint3 -s"        
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] cmi warp %player_name% checkpoint3 -s"        
+    - "[close]"       
+
+
+
+  "CH4-1":
+    material: red_wool
+    hide_attributes: true
+    priority: 2
+    slot: 29
+    display_name: "&8[&c&lCheckpoint IV&8]"
+    lore:
+    - ""
+    - "&7Tento checkpoint nemáš odemčený. "
+    - ""
+
+
+  "CH4-2":
+    material: green_wool
+    hide_attributes: true
+    priority: 1
+    slot: 29
+    display_name: "&8[&c&lCheckpoint IV&8]"
+    lore:
+    - ""
+    - "&7Teleportuj se na checkpoint. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.4
+
+    left_click_commands:
+    - "[console] cmi warp %player_name% checkpoint4 -s"        
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] cmi warp %player_name% checkpoint4 -s"        
+    - "[close]"       
+
+  "CH5-1":
+    material: red_wool
+    hide_attributes: true
+    priority: 2
+    slot: 33
+    display_name: "&8[&c&lCheckpoint V&8]"
+    lore:
+    - ""
+    - "&7Tento checkpoint nemáš odemčený. "
+    - ""
+
+
+  "CH5-2":
+    material: green_wool
+    hide_attributes: true
+    priority: 1
+    slot: 33
+    display_name: "&8[&c&lCheckpoint V&8]"
+    lore:
+    - ""
+    - "&7Teleportuj se na checkpoint. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.5
+
+    left_click_commands:
+    - "[console] cmi warp %player_name% checkpoint5 -s"        
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] cmi warp %player_name% checkpoint5 -s"        
+    - "[close]"       
+
+
+
+
+  "odmena":
+    material: gold_block
+    hide_attributes: true
+    priority: 2
+    slot: 49
+    display_name: "&8[&c&lOdměna&8]"
+    lore:
+    - ""
+    - "&7Klikni pro vyzvednutí odměny. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.checkpoint.1
+        2:
+          type: "has permission"
+          permission: parkour.checkpoint.2
+        3:
+          type: "has permission"
+          permission: parkour.checkpoint.3
+        4:
+          type: "has permission"
+          permission: parkour.checkpoint.4
+        5:
+          type: "has permission"
+          permission: parkour.checkpoint.5
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set parkour.hotovo true server=survival" 
+    - "[console] cmi kit stamina %player_name% -s"  
+    - "[console] money give %player_name% 15000"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Gratulujeme k dokončení parkouru!"  
+    - "[close]" 
+
+    right_click_commands:
+    - "[console] lp user %player_name% permission set parkour.hotovo true server=survival" 
+    - "[console] cmi kit stamina %player_name% -s"  
+    - "[console] money give %player_name% 15000"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Gratulujeme k dokončení parkouru!"  
+    - "[close]" 
+
+  "odmena-hotovo":
+    material: redstone_block
+    hide_attributes: true
+    priority: 1
+    slot: 49
+    display_name: "&8[&c&lOdměna&8]"
+    lore:
+    - ""
+    - "&7Odměnu jsi již obdržel. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: parkour.hotovo
+
+
+
+  "odmena-nehotovo":
+    material: emerald_block
+    hide_attributes: true
+    priority: 3
+    slot: 49
+    display_name: "&8[&c&lOdměna&8]"
+    lore:
+    - ""
+    - "&7Odemkni všechny checkpointy "
+    - "&7a získej odměnu. "
+    - ""
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

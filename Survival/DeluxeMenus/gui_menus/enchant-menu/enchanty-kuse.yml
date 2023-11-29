@@ -1,0 +1,66 @@
+menu_title: "&8▶ &0Enchanty - Kuše &8◀"
+
+size: 54
+
+items:
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé itemy '
+    - "&7za &cPlaytime tokeny&7. "
+    - "&7Ty automaticky získáš za "
+    - "&7odehraný čas na serveru. "
+    - "&7Vybrat si je můžeš přes &c/odmeny&7. "
+    - ""
+    - "&7Playtime tokeny:&c %ecobits_playtime% "
+    - ""
+
+
+#  'dalsi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+#    hide_attributes: true
+#    slot: 53
+#    display_name: "&8[&c&lDalší Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na další stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty2'      
+#    right_click_commands:
+#    - '[openmenu] recepty2'      
+#  'predchozi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+#    hide_attributes: true
+#    slot: 45
+#    display_name: "&8[&c&lPředchozí Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na předchozí stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty3'      
+#    right_click_commands:
+#    - '[openmenu] recepty3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

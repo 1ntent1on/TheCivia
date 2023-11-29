@@ -1,0 +1,242 @@
+menu_title: "&8▶ &0Playtime Obchod - Enchanty &8◀"
+
+size: 54
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Mec":
+    material: netherite_sword
+    hide_attributes: true    
+    slot: 10
+    display_name: "&8[&c&lEnchanty na Meč&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-mec"        
+    right_click_commands:
+    - "[openguimenu] enchanty-mec"    
+
+
+  "Krump":
+    material: netherite_pickaxe
+    hide_attributes: true        
+    slot: 11
+    display_name: "&8[&c&lEnchanty na Krumpáč&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-krump"        
+    right_click_commands:
+    - "[openguimenu] enchanty-krump" 
+
+
+  "Sekera":
+    material: netherite_axe
+    hide_attributes: true    
+    slot: 12
+    display_name: "&8[&c&lEnchanty na Sekeru&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-axe"        
+    right_click_commands:
+    - "[openguimenu] enchanty-axe"          
+
+
+  "lopata":
+    material: netherite_shovel
+    hide_attributes: true        
+    slot: 13
+    display_name: "&8[&c&lEnchanty na Lopatu&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-lopata"        
+    right_click_commands:
+    - "[openguimenu] enchanty-lopata"
+
+
+
+  "Hoe":
+    material: netherite_hoe
+    hide_attributes: true        
+    slot: 14
+    display_name: "&8[&c&lEnchanty na Motyku&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-hoe"        
+    right_click_commands:
+    - "[openguimenu] enchanty-hoe"
+
+
+
+
+
+  "Luk":
+    material: bow
+    hide_attributes: true        
+    slot: 15
+    display_name: "&8[&c&lEnchanty na Luk&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-luk"        
+    right_click_commands:
+    - "[openguimenu] enchanty-luk"            
+
+  "Kuse":
+    material: crossbow
+    hide_attributes: true        
+    slot: 16
+    display_name: "&8[&c&lEnchanty na Kuši&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-kuse"        
+    right_click_commands:
+    - "[openguimenu] enchanty-kuse"     
+
+
+  "Helma":
+    material: netherite_helmet
+    hide_attributes: true        
+    slot: 19
+    display_name: "&8[&c&lEnchanty na Helmu&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-helma"        
+    right_click_commands:
+    - "[openguimenu] enchanty-helma"     
+
+  "Ch":
+    material: netherite_chestplate
+    hide_attributes: true        
+    slot: 20
+    display_name: "&8[&c&lEnchanty na Chestplate&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-chestplate"        
+    right_click_commands:
+    - "[openguimenu] enchanty-chestplate"     
+
+  "Leg":
+    material: netherite_leggings
+    hide_attributes: true        
+    slot: 21
+    display_name: "&8[&c&lEnchanty na Kalhoty&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-kalhoty"        
+    right_click_commands:
+    - "[openguimenu] enchanty-kalhoty"     
+
+  "Boty":
+    material: netherite_boots
+    hide_attributes: true        
+    slot: 22
+    display_name: "&8[&c&lEnchanty na Boty&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-boty"        
+    right_click_commands:
+    - "[openguimenu] enchanty-boty"     
+
+
+  "Tri":
+    material: trident
+    hide_attributes: true        
+    slot: 23
+    display_name: "&8[&c&lEnchanty na Trident&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] enchanty-trident"        
+    right_click_commands:
+    - "[openguimenu] enchanty-trident"     
+
+
+  "Shield":
+    material: shield
+    hide_attributes: true        
+    slot: 24
+    display_name: "&8[&c&lEnchanty na Šťít&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    click_commands:
+    - "[openguimenu] enchanty-shield"        
+ 
+
+  "Elytra":
+    material: elytra
+    hide_attributes: true        
+    slot: 25
+    display_name: "&8[&c&lEnchanty na Elytru&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    click_commands:
+    - "[openguimenu] enchanty-elytra" 
+
+
+  "Shears":
+    material: shears
+    hide_attributes: true        
+    slot: 28
+    display_name: "&8[&c&lEnchanty na Nůžky&8]"
+    lore:
+    - ""
+    - "&7Klikni pro přechod do kategorie. "
+    - ""
+    click_commands:
+    - "[openguimenu] enchanty-nuzky"               
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

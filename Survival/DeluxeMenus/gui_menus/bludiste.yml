@@ -1,0 +1,78 @@
+menu_title: "&8▶ &0Bludiště &8◀"
+
+size: 27
+
+
+items:
+
+
+
+  "odmena-hotovo":
+    material: redstone_block
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: "&8[&c&lOdměna&8]"
+    lore:
+    - ""
+    - "&7Odměnu jsi již obdržel. "
+    - ""
+    view_requirement:
+      requirements:
+        1:
+          type: "has permission"
+          permission: bludiste.hotovo
+
+
+
+  "odmena-nehotovo":
+    material: emerald_block
+    hide_attributes: true
+    priority: 2
+    slot: 11
+    display_name: "&8[&c&lOdměna&8]"
+    lore:
+    - ""
+    - "&7Dokončil jsi celé bludiště! "
+    - ""
+    - "&7Klikni pro vyzvednutí odměny."
+    - ""
+    left_click_commands:
+    - "[console] lp user %player_name% permission set bludiste.hotovo true server=survival" 
+    - "[console] cmi kit bludiste %player_name% -s"
+    - "[console] lands admin player %player_name% give claimblock 2"
+    - "[console] money give %player_name% 50000"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Gratulujeme k dokončení eventu!"  
+    - "[refresh]" 
+
+    right_click_commands:
+    - "[console] lp user %player_name% permission set bludiste.hotovo true server=survival" 
+    - "[console] cmi kit bludiste %player_name% -s"
+    - "[console] lands admin player %player_name% give claimblock 2"
+    - "[console] money give %player_name% 50000"   
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Gratulujeme k dokončení eventu!"  
+    - "[refresh]" 
+
+
+
+  "spawn":
+    material: ender_pearl
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: "&8[&c&lSpawn&8]"
+    lore:
+    - ""
+    - "&7Klikni pro teleportaci na spawn. "
+    - ""
+    right_click_commands:
+    - "[player] spawn" 
+    left_click_commands:
+    - "[player] spawn" 
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

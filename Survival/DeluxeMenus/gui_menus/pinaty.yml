@@ -1,0 +1,99 @@
+menu_title: "&8▶ &0Piñaty &8◀"
+
+size: 36
+
+items:
+
+
+                              
+
+
+  'Pinata':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBmZGZhNjBjNjI0ZmI2NjdjODMxM2IyZmIxZGFiNDBlMGFkMmU2ZTQ2OWI1NjdiZjU5NmFkMjYzOTIzMTljNSJ9fX0=
+    slot: 11
+    display_name: "&8[&c&lVyvolání Piñaty&8]" 
+    lore:
+    - ''
+    - '&7Při zakoupení Piñaty obdržíš speciální '
+    - "&7token. Díky němu můžeš následně vyvolat "
+    - "&7Piñatu dle libosti. "
+    - ""
+    - "&7Tokeny: &c%ecobits_pinatatoken% "
+    - ""  
+    - "&7Klikni pro vyvolání Piñaty za cenu &c1&7 Tokenu. "
+    - ""
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatatoken% >= 1'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek tokenů na vyvolání Piñaty." 
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_pinatatoken% >= 1'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek tokenů na vyvolání Piñaty." 
+
+
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyvolat jsi Piñatu!"             
+    - "[console] ecobits take %player_name% pinatatoken 1"
+    - "[console] pinataparty spawn spawn"    
+    - "[refresh]"    
+
+
+    left_click_commands:
+ 
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyvolat jsi Piñatu!"             
+    - "[console] ecobits take %player_name% pinatatoken 1"
+    - "[console] pinataparty spawn spawn"    
+    - "[refresh]"   
+
+
+
+  'Odmeny':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdlNTVmY2M4MDlhMmFjMTg2MWRhMmE2N2Y3ZjMxYmQ3MjM3ODg3ZDE2MmVjYTFlZGE1MjZhNzUxMmE2NDkxMCJ9fX0=
+    slot: 15
+    display_name: "&8[&c&lOdměny&8]" 
+    lore:
+    - ''
+    - '&7Klikni pro zobrazení možnách odměn '
+    - "&7z Piñaty. "
+    - ""
+
+    left_click_commands:
+    - '[openmenu] pinata'     
+    right_click_commands:
+    - '[openmenu] pinata'  
+
+  'Obchod':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRjY2I1Mjc1MGU5N2U4MzBhZWJmYThhMjFkNWRhMGQzNjRkMGZkYWQ5ZmIwY2MyMjBmZTJjYTg0MTE4NDJjMyJ9fX0=
+    slot: 22
+    display_name: "&8[&c&lPiñata Obchod&8]" 
+    lore:
+    - ''
+    - '&7z Piñaty můžeš získat speciální Piñata Coiny. '
+    - "&7Ty zde můžeš vyměnit za různé itemy. "
+    - ""
+    - "&7Klikni pro zobrazení obchodu."
+    - ""
+
+    left_click_commands:
+    - '[openmenu] pinatashop'     
+    right_click_commands:
+    - '[openmenu] pinatashop'  
+
+
+  filler-item:
+    priority: 26
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-35

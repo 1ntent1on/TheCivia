@@ -1,0 +1,152 @@
+menu_title: "&8▶ &0Market &8◀"
+
+size: 54
+
+items:
+
+
+  'VIP':
+    material: nether_star
+    hide_attributes: true
+    slot: 10
+    display_name: "&8[&c&lVIP&8]"
+    lore:
+    - ''
+    - '&7Chceš si zakoupit speciální rank, '
+    - "&7který ti pomůže odlišit se od "
+    - "&7ostatních hráčů pomocí kosmetických "
+    - "&7výhod? "
+    - "&7"
+    - "&cStále v přípravě! "
+    - ""
+#    left_click_commands:
+#     - "[openguimenu] market-vip"   
+#     - "[sound] ui_cartography_table_take_result 2 5"          
+
+
+     
+  'Mazlicci':
+    material: ghast_spawn_egg
+    hide_enchantments: true
+    enchantments:
+      - DAMAGE_ALL;1
+    hide_attributes: true
+    slot: 13
+    display_name: "&8[&c&lMazlíčci&8]"
+    lore:
+    - ''
+    - '&7Chceš si zakoupit mazlíčka, '
+    - "&7který bude pořád stát při tvém "
+    - "&7boku? "
+    - "&7"
+    click_commands:
+     - "[openguimenu] market-mazlicci"   
+     - "[sound] ui_cartography_table_take_result 2 5"          
+
+
+
+  'Doplnky':
+    material: leather_chestplate
+    hide_attributes: true
+    hide_enchantments: true
+    item_flags: HIDE_DYE
+    rgb: 38, 192, 210
+    enchantments:
+      - DAMAGE_ALL;1
+    slot: 16
+    display_name: "&8[&c&lKosmetické Doplnky&8]"
+    lore:
+    - ''
+    - '&7Chceš si zakoupit různé '
+    - "&7kosmetické doplňky, které "
+    - "&7ti přidají na stylu? "
+    - "&7"
+    - "&cStále v přípravě! "
+    - ""
+ #   left_click_commands:
+ #    - "[openguimenu] market-doplnky"   
+ #    - "[sound] ui_cartography_table_take_result 2 5"          
+
+
+
+  'Skiny':
+    material: diamond_sword
+    hide_enchantments: true
+    enchantments:
+      - DAMAGE_ALL;1
+    hide_attributes: true
+    slot: 29
+    display_name: "&8[&c&lItem Skiny&8]"
+    lore:
+    - ''
+    - '&7Chceš, aby tvé itemy vypadaly '
+    - "&7lépe, než itemy ostatních? "
+    - "&7"
+    - "&cStále v přípravě! "
+    - ""
+#    left_click_commands:
+#     - "[openguimenu] market-skiny"   
+#     - "[sound] ui_cartography_table_take_result 2 5"          
+
+
+
+
+  'Ostatni':
+    material: ender_pearl
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+      - DAMAGE_ALL;1    
+    slot: 33
+    display_name: "&8[&c&lJiné&8]"
+    lore:
+    - ''
+    - '&7Nenašel jsi v předešlých kategoriích '
+    - "&7něco, co jsi hledal? "
+    - "&7Pak to možná bude právě tady! "
+    - "&7"
+    left_click_commands:
+     - "[openguimenu] market-jine"   
+     - "[sound] ui_cartography_table_take_result 2 5"          
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé doplňky '
+    - "&7za &cTokeny&7. "
+    - "&7"
+    - "&7Tokeny si můžeš zakoupit na: "
+    - "&cwww.obchod.thecivia.net "
+    - ""
+    - "&7Tvé tokeny:&c %ecobits_token% "
+    - ""
+    - "&8Klikni pro získání odkazu v chatu. "
+    - ""
+    left_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"          
+    right_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"           
+
+
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 0-53

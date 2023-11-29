@@ -1,0 +1,402 @@
+menu_title: "&8▶ &0Playtime Obchod &8◀"
+
+size: 54
+open_command: playtime-obchod
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Ingot":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUyNWRiZTQ3NjY3ZDBjZTIzMWJhYTIyM2RlZTk1M2JiZmM5Njk2MDk3Mjc5ZDcyMzcwM2QyY2MzMzk3NjQ5ZSJ9fX0=
+    slot: 10
+    display_name: "&8[&c&lPeníze - 10000&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena: &c1 &7Playtime Token "
+     - ""
+     - "&7Klikni pro výměnu "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 1'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 1'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 1"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] cmi money give %player_name% 10000"    
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 1"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] cmi money give %player_name% 10000"    
+    - "[refresh]"   
+
+
+
+  "Pinata":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBmZGZhNjBjNjI0ZmI2NjdjODMxM2IyZmIxZGFiNDBlMGFkMmU2ZTQ2OWI1NjdiZjU5NmFkMjYzOTIzMTljNSJ9fX0=
+    slot: 11
+    display_name: "&8[&c&lPiñata&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena: &c50 &7Playtime Tokenů "
+     - ""
+     - "&7Klikni pro vyvolání "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 50'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 50'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 50"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] pinataparty spawn spawn"     
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 50"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] pinataparty spawn spawn"     
+    - "[refresh]"   
+
+
+
+  "PH":
+    material: netherite_helmet
+    slot: 12
+    display_name: "&8[&c&lPlaytime Helmet&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Obdrž permanentní &cNight Vision&7 efekt "
+     - "&8» &7Obdrž permanentní &cSpeed I&7 efekt"
+     - ""
+     - "&7Cena: &c8 &7Playtime Tokenů"
+     - ""
+     - "&7Klikni pro výměnu "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime helmet"    
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime helmet"    
+    - "[refresh]"   
+
+  "PH2":
+    material: netherite_chestplate
+    slot: 13
+    display_name: "&8[&c&lPlaytime Chestplate&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Obdrž permanentní &cNight Vision&7 efekt "
+     - "&8» &7Obdrž permanentní &cSpeed I&7 efekt"
+     - ""
+     - "&7Cena: &c8 &7Playtime Tokenů"
+     - ""
+     - "&7Klikni pro výměnu "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime chestplate"    
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime chestplate"    
+    - "[refresh]"   
+
+
+  "PH3":
+    material: netherite_leggings
+    slot: 14
+    display_name: "&8[&c&lPlaytime Leggings&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Obdrž permanentní &cNight Vision&7 efekt "
+     - "&8» &7Obdrž permanentní &cSpeed I&7 efekt"
+     - ""
+     - "&7Cena: &c8 &7Playtime Tokenů"
+     - ""
+     - "&7Klikni pro výměnu "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime leggings"    
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime leggings"    
+    - "[refresh]"   
+
+
+  "PH4":
+    material: netherite_boots
+    slot: 15
+    display_name: "&8[&c&lPlaytime Boots&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&c&lSet Bonus"
+     - "&8» &7Obdrž permanentní &cNight Vision&7 efekt "
+     - "&8» &7Obdrž permanentní &cSpeed I&7 efekt"
+     - ""
+     - "&7Cena: &c8 &7Playtime Tokenů"
+     - ""
+     - "&7Klikni pro výměnu "
+     - ""
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_playtime% >= 8'
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek Playtime tokenů."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+    left_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime boots"    
+    - "[refresh]"    
+
+    right_click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis item v Playtime Obchodu!"             
+    - "[console] ecobits take %player_name% playtime 8"
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] ecoarmor give %player_name% set:playtime boots"    
+    - "[refresh]"   
+
+
+
+  "Enchant":
+    material: enchanted_book
+    slot: 16
+    display_name: "&8[&c&lLibovolný Speciální Enchant&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Vyber si libovolný Speciální Enchant! "
+     - ""
+     - "&7Cena: &c5&7-&c15 &7Playtime Tokenů"
+     - ""
+     - "&7Klikni pro výběr "
+     - ""
+     - "&c&l!&7 Stále v přípravě &c&l!"
+     - ""
+    left_click_commands:
+    - "[openguimenu] Enchanty-main"        
+    right_click_commands:
+    - "[openguimenu] Enchanty-main"  
+
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé itemy '
+    - "&7za &cPlaytime tokeny&7. "
+    - "&7Ty automaticky získáš za "
+    - "&7odehraný čas na serveru. "
+    - "&7Vybrat si je můžeš přes &c/odmeny&7. "
+    - ""
+    - "&7Playtime tokeny:&c %ecobits_playtime% "
+    - ""
+
+
+#  'dalsi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+#    hide_attributes: true
+#    slot: 53
+#    display_name: "&8[&c&lDalší Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na další stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty2'      
+#    right_click_commands:
+#    - '[openmenu] recepty2'      
+#  'predchozi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+#    hide_attributes: true
+#    slot: 45
+#    display_name: "&8[&c&lPředchozí Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na předchozí stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty3'      
+#    right_click_commands:
+#    - '[openmenu] recepty3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

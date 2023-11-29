@@ -1,0 +1,193 @@
+menu_title: "&8▶ &0Banka &8◀"
+
+open_command: banka
+register_command: true
+
+size: 36
+
+
+items:
+
+
+  'dia':
+    material: diamond
+    slot: 11
+    display_name: "&8[&c&lDiamanty&8]" 
+    lore:
+    - ''
+    - '&7Prodej &cDiamanty&7! '
+    - ""
+    - "&7Pravé kliknutí: &c-1 &a+50$  "
+    - "&7Levé kliknutí: &c-16 &a+800$  "   
+    - "&7Prostřední kliknutí: &c-32 &a+1600$  "  
+    - ""  
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:diamond,amt:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."          
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:diamond,amt:16%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji." 
+    middle_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:diamond,amt:32%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."            
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 50"                    
+    left_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 500"   
+    middle_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 1600"             
+ 
+  'zlato':
+    material: gold_ingot
+    slot: 13
+    display_name: "&8[&c&lZlato&8]" 
+    lore:
+    - ''
+    - '&7Prodej &cZlato&7! '
+    - ""
+    - "&7Pravé kliknutí: &c-1 &a+12$  "
+    - "&7Levé kliknutí: &c-16 &a+192$  "   
+    - "&7Prostřední kliknutí: &c-64 &a+768$  "  
+    - ""  
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:gold_ingot,amt:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."          
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:gold_ingot,amt:16%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji." 
+    middle_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:gold_ingot,amt:64%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."            
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 12"                    
+    left_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 192"   
+    middle_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 768"             
+
+  'emerald':
+    material: emerald
+    slot: 15
+    display_name: "&8[&c&lEmeraldy&8]" 
+    lore:
+    - ''
+    - '&7Prodej &cEmeraldy&7! '
+    - ""
+    - "&7Pravé kliknutí: &c-1 &a+4$  "
+    - "&7Levé kliknutí: &c-16 &a+64$  "   
+    - "&7Prostřední kliknutí: &c-64 &a+256$  "  
+    - ""  
+
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:emerald,amt:1%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."          
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:emerald,amt:16%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji." 
+    middle_click_requirement:
+     requirements:
+      cobble:
+       type: string equals
+       input: '%checkitem_remove_mat:emerald,amt:64%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSurvival&8] &6&l» &cNemáš dostatek itemů k prodeji."            
+
+    right_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 4"                    
+    left_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 64"   
+    middle_click_commands:
+ 
+    - "[message] &8[&c&lSurvival&8] &6&l» &aProdal jsi své itemy!"             
+    - "[console] money give %player_name% 256"             
+
+
+
+
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2    
+    slot: 31
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Prodej materiály do banky '
+    - "&7a získej tak peníze! "
+    - ""
+
+
+  'Sklo':
+    material: GRAY_STAINED_GLASS_PANE
+    priority: 2    
+    slots:
+    - 0-10
+    - 16-30
+    - 32-35
+    - 12
+    - 14
+    display_name: ' '

@@ -1,0 +1,82 @@
+menu_title: "&8▶ &0Wither Itemy &8◀"
+
+size: 27
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Ingot":
+    material: brick
+    model_data: 5
+    slot: 10
+    display_name: "&8[&c&lWither Ingot&8]"
+    lore:
+    - ""
+    - "&7Dá se získat z: &cWither "
+    - "&7Šance dropnutí: &c0.5%"
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    left_click_commands:
+    - "[openguimenu] recepty-wingot"        
+    right_click_commands:
+    - "[openguimenu] recepty-wingot"  
+
+
+
+  "Fragment":
+    material: flint
+    model_data: 4
+    slot: 11
+    display_name: "&8[&c&lWither Fragment&8]"
+    lore:
+    - ""
+    - "&7Dá se získat z: &cWither "
+    - "&7Šance dropnutí: &c30%"
+    - ""
+  
+  "Tooth":
+    material: firework_star
+    model_data: 1
+    slot: 12
+    display_name: "&8[&c&lWither Soul&8]"
+    lore:
+    - ""
+    - "&7Dá se získat z: &cWither "
+    - "&7Šance dropnutí: &c10%"
+    - ""
+
+
+
+  "Wither":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U0ZjQ5NTM1YTI3NmFhY2M0ZGM4NDEzM2JmZTgxYmU1ZjJhNDc5OWE0YzA0ZDlhNGRkYjcyZDgxOWVjMmIyYiJ9fX0=
+    slot: 16
+    display_name: "&8[&c&lSpeciální Itemy&8]"
+    lore:
+    - ""
+    - "&7Klikni pro prohlédnutí speciálních"
+    - "&cWither itemů"
+    - ""
+    left_click_commands:
+    - "[openguimenu] Witheritemy"        
+    right_click_commands:
+    - "[openguimenu] Witheritemy"  
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

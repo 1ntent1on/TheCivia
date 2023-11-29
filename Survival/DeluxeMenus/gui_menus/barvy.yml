@@ -1,0 +1,110 @@
+menu_title: "&8▶ &0Barvy &8◀"
+
+size: 54
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Gold":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5Zjk1YjZjMTY1MmRlODAwODQ1YzFkMjMxNWJiMGZjMzAyMDRiNDZlZGIzNzNmMWI2M2RlNjMxODEwN2JkZSJ9fX0=
+    slot: 6
+    display_name: "&6Gold"
+
+  "Yellow":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ1MzA5YTg0OTI3NDdhMDFiYWEwNTViYjM4ZjI1Y2YwMTIwMTI1NzExNDFjMjQ4NDBjYjc2ZGE1NjBkZmM4NiJ9fX0=
+    slot: 15
+    display_name: "&eYellow"
+
+  "Dark_Aqua":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAwZTFiODU4MDM5Yjg5NTI1YTA2ZjlmYmQ3ODQ3NDk1MjcyMWRlNjFjZWMwNjNhYjQ1MWE5ODQ0MGNhNjQyOSJ9fX0=
+    slot: 3
+    display_name: "&3Dark Aqua"
+
+  "Aqua":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRkMTgzZjE2NmVjMTljZWYwZGY5YjEwZGY3YWRhMzA5MDQ0OTUxM2Y4MWUwNjc0ZDA1OGRiMjJkYzc3NjEwNCJ9fX0=
+    slot: 12
+    display_name: "&bAqua"    
+
+
+  "Dark_Blue":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBhM2FkZmRlYjBlNzBhNGQ3MmE4NmQ2ODYwYjc4NWIzODcxNmQxMzM1YmRkOGY4YzljYTQ1NzM4OTk5Y2Q5ZiJ9fX0=
+    slot: 1
+    display_name: "&1Dark Blue"    
+
+
+  "Blue":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjBlOTlkZjlhNjBiYzQxNTMyMTE4ZTkyYzEzOGRlODQ0YTliMWE5NmFkYmQyYzJiNjc1N2Y3NjhmYTA5ZDIyYyJ9fX0=
+    slot: 10
+    display_name: "&9Blue"   
+
+
+
+
+  "Black":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM3MWQzNmM5ZGZhOGY0OGE1MDU0NzEzOTQ0MTk0Y2MxZjUwYzAyMjUyNjNiZGYxOTQwMjMxYjc2ZDQ3YTU5YyJ9fX0=
+    slot: 0
+    display_name: "&0Black"   
+
+  "Dark_Gray":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMzYjE5ZTI5Y2RkYjdlNmE4NzlkOWVlN2ViN2FjZGZiZGM0ZWRkMTg1MTZkYjQyNmZmNDZhMTFmYmY4ZTkyNiJ9fX0=
+    slot: 9
+    display_name: "&8Dark Gray"   
+
+
+  "Dark_Green":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQ5NDI4MDc1OTMyOGIxMDdjMGJmMTU5OGE1MjQ4NzgyNzQyZjU2MGEyY2RiMzZhYzU5ZjAzZThiYTY1YWU5YiJ9fX0=
+    slot: 2
+    display_name: "&2Dark Green"   
+
+
+  "Green":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzczOTM1ZmE3NDljMjNiYWM5YTExMDM5OWM0NjZmMTllYzQwNTZhZGM5ZTZjMzk5YjcwNWY1MzU3YjNiZDQwYSJ9fX0=
+    slot: 11
+    display_name: "&aGreen"           
+
+  "Dark_Red":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM3MWVjZmMzMmYzMmZlNjdjNDkxNzRhMTg4YzAyODNiNTU3NDc4YWI3OTU4MDg0NDA4Nzc5YTk5ZDUwYTgxZCJ9fX0=
+    slot: 4
+    display_name: "&4Dark Red"       
+
+  "Red":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViZTgxMWM4YzFlZTU5YTA3YjY5YmJmZTIzYmNkODQ1OTg3NzQyNDg4MmZkMmZjZjk0NDk2ZTljOTFhZWI1YiJ9fX0=
+    slot: 13
+    display_name: "&cRed"    
+
+
+  "Dark_Purple":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYwYmE1MGIxZDFkNGM4M2FkZjI5ZmQ3ZTBmN2JlMjllMzI4NjNjN2Q3MDgyNzliMTY2MjVkMjgwNWYxZTgwMiJ9fX0=
+    slot: 5
+    display_name: "&5Dark Purple"    
+
+  "Purple":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNkYjMxYTdjN2E4YWJjN2RhOGNjOWM1ZTY5Yzg0NmU2OGUxNzJiYzBhMjMxNGYyZDIwYmVlYTM4M2E4M2I2YSJ9fX0=
+    slot: 14
+    display_name: "&dPurple"    
+
+  "Gray":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVmMzk4YjljMjU5MmJlYjg1OTE2OGFmZTQxMDNiMjQwZjRhYWIzNzc2MTU5NDczMzFiNWRjMTZlOWI3MTU3YSJ9fX0=
+    slot: 7
+    display_name: "&7Gray"    
+
+  "White":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJmZDU5NWMwNjIxMjNkOTgzNzY3ZDJkYTMyNWYzNDc0ODc0NGM1ZjIxYmRmODZhYjdlYWViNzMwYWIyMjc0MSJ9fX0=
+    slot: 16
+    display_name: "&fWhite"   
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

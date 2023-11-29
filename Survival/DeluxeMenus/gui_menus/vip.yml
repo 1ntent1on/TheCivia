@@ -1,0 +1,113 @@
+menu_title: "&8▶ &0VIP &8◀"
+
+size: 54
+
+items:
+
+
+  "VIP":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmYzM3MmJjMWRhMWE0YzY1ZjYzYjQ1YmU2NzE5NDYyYzYwMWVlNTM4ZDIxODY1ZTQ2YmZkNTVkZDgzOTUifX19
+    slot: 11
+    display_name: "&8[&c&lVIP&8]"
+    lore:
+    - ""
+    - "&7VIP si můžeš zakoupit na "
+    - "&cobchod.thecivia.net&7. "
+    - ""
+   
+
+  "MVP":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRkZmQ4ZDExNjU5ZDE4ZWVkNzc3MDZhYzY3ZGUzNjQyM2JmOWE2MzRjZTM5NjAzYWZjOTRkMzA2YWU3In19fQ==
+    slot: 15
+    display_name: "&8[&c&lMVP&8]"
+    lore:
+    - ""
+    - "&7Již brzy. "
+    - ""
+
+
+
+  "Info-VIP":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRiZjg5M2ZjNmRlZmFkMjE4Zjc4MzZlZmVmYmU2MzZmMWMyY2MxYmI2NTBjODJmY2NkOTlmMmMxZWU2In19fQ==
+    hide_attributes: true
+    priority: 2    
+    slot: 29
+    display_name: "&8[&c&lInfo - VIP&8]"
+    lore:
+    - ""
+    - "&7Jako VIP hráč obdržíš následující"
+    - "&7výhody:"
+    - ""
+    - "&c- &7Role ve hře a na Discordu "
+    - "&c- &7Barevné psaní na cedulky "
+    - "&c- &7Přístup do Discord herních chatu "
+    - "&c- &7VIP chat s Discordem &c/vc zpráva " 
+    - "&c- &7Možnost použití &c%inv% "
+    - "&c- &7Možnost použití &c%ender% "    
+    - "&c- &7Možnost použití &c/glow "
+    - "&c- &7Možnost změny barvy suffixů "  
+    - "&c- &7Speciální login a logout zpráva "   
+    - ""
+    - "&7Klikni pro změnu prefixu."
+    - ""
+    left_click_requirement:
+     requirements:
+      cobble:
+       type: "has permission"
+       permission: vip.suffixy  
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cTato funkce je pouze pro VIP." 
+    right_click_requirement:
+     requirements:
+      cobble:
+       type: "has permission"
+       permission: vip.suffixy 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cTato funkce je pouze pro VIP." 
+
+    left_click_commands: 
+    - "[openmenu] prefix-barvy"          
+    right_click_commands: 
+    - "[openmenu] prefix-barvy"  
+
+
+  "Info-MVP":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjN2FkZmMzZDg2NGJlYTgzYmQ3NzZhY2E0NzkxN2YxMmU2NTg3NmI2NGQ2Yzk2ODIyY2ZhNmEzNjhjMmVhIn19fQ==
+    hide_attributes: true
+    priority: 2    
+    slot: 33
+    display_name: "&8[&c&lInfo - MVP&8]"
+    lore:
+    - ""
+    - "&7Již brzy. "
+    - ""
+
+
+  "Info":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    priority: 2    
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ""
+    - "&7VIP na našem serveru jsou převážně "
+    - "&7pro lidi, kteří chtějí podpořit "
+    - "&7chod celého projektu."
+    - "&7"
+    - "&7Proto také VIP neobsahují výhody, "
+    - "&7které by měly nějaký dopad na "
+    - "&7celkovou hru. "
+    - ""
+    - ""     
+    - "&8Pro jakýkoliv problém ohledně "
+    - "&8VIP nás prosím kontakuj na "
+    - "&8Discordu pomocí ticketu. "
+    - ""
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

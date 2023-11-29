@@ -1,0 +1,171 @@
+menu_title: "&8▶ &0Warden Zbraně &8◀"
+
+size: 27
+
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Ingot":
+    material: netherite_sword
+    model_data: 6
+    slot: 10
+    display_name: "&8[&#004659&lWarden Sword&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c2x Warden Ingot"
+     - "&7- &c1x Stick"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#004659Warden Ingot"
+       modeldata: 1
+       amount: 2
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "stick"
+       amount: 1   
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:2,namecontains:Warden Ingot,custommodeldata:1%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:stick,amt:1%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Sword"       
+    - "[console] ecoitems give %player_name% warden_sword"  
+    - "[refresh]" 
+
+
+  "Ingot2":
+    material: bow
+    model_data: 3
+    slot: 11
+    display_name: "&8[&#004659&lWarden Bow&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c3x Warden Ingot"
+     - "&7- &c3x String"     
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#004659Warden Ingot"
+       modeldata: 1
+       amount: 3
+       name_contains: yes
+      cobble3:
+       type: has item
+       material: "string"
+       amount: 3 
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:3,namecontains:Warden Ingot,custommodeldata:1%" 
+    - "[console] papi parse %player_name% %checkitem_remove_mat:string,amt:3%"                        
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Bow"       
+    - "[console] ecoitems give %player_name% warden_bow"   
+    - "[refresh]" 
+
+  "Ingot3":
+    material: shield
+    model_data: 2
+    slot: 12
+    display_name: "&8[&#004659&lWarden Shield&8]"
+    hide_attributes: true
+    lore:
+     - ""
+     - "&7Cena výroby:"
+     - "&7- &c7x Warden Ingot"
+     - ""
+     - "&7Klikni pro výrobu"
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: has item
+       material: "brick"
+       name: "&#004659Warden Ingot"
+       modeldata: 1
+       amount: 7
+       name_contains: yes
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &cNemáš dostatek itemů k výrobě itemu."      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+
+
+    click_commands:
+    - "[message] &8[&c&lTheCivia&8] &6&l» &aVyrobil sis nový item!"  
+    - "[console] papi parse %player_name% %checkitem_remove_mat:brick,amt:7,namecontains:Warden Ingot,custommodeldata:1%"                
+    - "[console] cmi sound block_anvil_use %player_name%"  
+    - "[console] cmi titlemsg %player_name% &c&lItem Vyroben!\n{#004659}Warden Shield"       
+    - "[console] ecoitems give %player_name% warden_shield"   
+    - "[refresh]" 
+
+
+
+
+
+
+
+
+  'dalsi-strana':
+    material: netherite_pickaxe
+    hide_attributes: true
+    slot: 16
+    display_name: "&8[&c&lWarden Nástroje&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun do dalšího menu. '
+    - ""
+    left_click_commands:
+    - '[openmenu] wardenitemy3'      
+    right_click_commands:
+    - '[openmenu] wardenitemy3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-26

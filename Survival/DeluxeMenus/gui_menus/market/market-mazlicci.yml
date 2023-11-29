@@ -1,0 +1,866 @@
+menu_title: "&8▶ &0Market - Mazlíčci &8◀"
+
+size: 54
+
+items:
+
+
+
+
+     
+
+
+
+
+  "Blaze":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0=    
+    priority: 2
+    slot: 10
+    display_name: "&8[&c&lBlaze&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cBlaze&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Blaze** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.blaze true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "Blaze2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0=    
+    priority: 1
+    slot: 10
+    display_name: "&8[&c&lBlaze&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.blaze      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "cavespider":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNjYzRhMzJkNDVkNzRlOGIxNGVmMWZmZDU1Y2Q1ZjM4MWEwNmQ0OTk5MDgxZDUyZWFlYTEyZTEzMjkzZTIwOSJ9fX0=
+    priority: 2
+    slot: 11
+    display_name: "&8[&c&lCave Spider&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cCave Spider&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Cave Spider** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.cavespider true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "cavespider2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNjYzRhMzJkNDVkNzRlOGIxNGVmMWZmZDU1Y2Q1ZjM4MWEwNmQ0OTk5MDgxZDUyZWFlYTEyZTEzMjkzZTIwOSJ9fX0=
+    priority: 1
+    slot: 11
+    display_name: "&8[&c&lCave Spider&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.cavespider      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "drowned":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg0ZGY3OWM0OTEwNGIxOThjZGFkNmQ5OWZkMGQwYmNmMTUzMWM5MmQ0YWI2MjY5ZTQwYjdkM2NiYmI4ZTk4YyJ9fX0=
+    priority: 2
+    slot: 12
+    display_name: "&8[&c&lDrowned&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cDrowned&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Drowned** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.drowned true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+
+  "drowned2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg0ZGY3OWM0OTEwNGIxOThjZGFkNmQ5OWZkMGQwYmNmMTUzMWM5MmQ0YWI2MjY5ZTQwYjdkM2NiYmI4ZTk4YyJ9fX0=
+    priority: 1
+    slot: 12
+    display_name: "&8[&c&lDrowned&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.drowned      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "husk":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY5Yjk3MzRkMGU3YmYwNjBmZWRjNmJmN2ZlYzY0ZTFmN2FkNmZjODBiMGZkODQ0MWFkMGM3NTA4Yzg1MGQ3MyJ9fX0=
+    priority: 2
+    slot: 13
+    display_name: "&8[&c&lHusk&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cHusk&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Husk** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.husk true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "husk2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY5Yjk3MzRkMGU3YmYwNjBmZWRjNmJmN2ZlYzY0ZTFmN2FkNmZjODBiMGZkODQ0MWFkMGM3NTA4Yzg1MGQ3MyJ9fX0=
+    priority: 1
+    slot: 13
+    display_name: "&8[&c&lHusk&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.husk      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+
+
+  "skeleton":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0=
+    priority: 2
+    slot: 14
+    display_name: "&8[&c&lSkeleton&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cSkeleton&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Skeleton** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.skeleton true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "skeleton2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0=
+    priority: 1
+    slot: 14
+    display_name: "&8[&c&lSkeleton&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.skeleton      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "spider":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0=
+    priority: 2
+    slot: 15
+    display_name: "&8[&c&lSpider&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cSpider&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Spider** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.spider true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "spider2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0=
+    priority: 1
+    slot: 15
+    display_name: "&8[&c&lSpider&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.spider      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "stray":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1MDk3OTE2YmMwNTY1ZDMwNjAxYzBlZWJmZWIyODcyNzdhMzRlODY3YjRlYTQzYzYzODE5ZDUzZTg5ZWRlNyJ9fX0=
+    priority: 2
+    slot: 16
+    display_name: "&8[&c&lStray&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cStray&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Stray** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.stray true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "stray2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1MDk3OTE2YmMwNTY1ZDMwNjAxYzBlZWJmZWIyODcyNzdhMzRlODY3YjRlYTQzYzYzODE5ZDUzZTg5ZWRlNyJ9fX0=
+    priority: 1
+    slot: 16
+    display_name: "&8[&c&lStray&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.stray      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "witherskeleton":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlYzk2NDY0NWE4ZWZhYzc2YmUyZjE2MGQ3Yzk5NTYzNjJmMzJiNjUxNzM5MGM1OWMzMDg1MDM0ZjA1MGNmZiJ9fX0=
+    priority: 2
+    slot: 19
+    display_name: "&8[&c&lWither Skeleton&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cWither Skeleton&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Wither Skeleton** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.witherskeleton true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "witherskeleton2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlYzk2NDY0NWE4ZWZhYzc2YmUyZjE2MGQ3Yzk5NTYzNjJmMzJiNjUxNzM5MGM1OWMzMDg1MDM0ZjA1MGNmZiJ9fX0=
+    priority: 1
+    slot: 19
+    display_name: "&8[&c&lWither Skeleton&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.witherskeleton      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "zombie":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ1MjhiMzIyOTY2MGYzZGZhYjQyNDE0ZjU5ZWU4ZmQwMWU4MDA4MWRkM2RmMzA4Njk1MzZiYTliNDE0ZTA4OSJ9fX0=
+    priority: 2
+    slot: 20
+    display_name: "&8[&c&lZombie&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cZombie&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""     
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Zombie** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.zombie true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "zombie2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ1MjhiMzIyOTY2MGYzZGZhYjQyNDE0ZjU5ZWU4ZmQwMWU4MDA4MWRkM2RmMzA4Njk1MzZiYTliNDE0ZTA4OSJ9fX0=
+    priority: 1
+    slot: 20
+    display_name: "&8[&c&lZombie&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.zombie      
+    click_commands:
+    - "[player] mazlicci"    
+
+
+  "zombifiedpiglin":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRlOWM2ZTk4NTgyZmZkOGZmOGZlYjMzMjJjZDE4NDljNDNmYjE2YjE1OGFiYjExY2E3YjQyZWRhNzc0M2ViIn19fQ==
+    priority: 2
+    slot: 21
+    display_name: "&8[&c&lZombified Piglin&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cZombified Piglin&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Zombified Piglin** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.zombifiedpiglin true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "zombifiedpiglin2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRlOWM2ZTk4NTgyZmZkOGZmOGZlYjMzMjJjZDE4NDljNDNmYjE2YjE1OGFiYjExY2E3YjQyZWRhNzc0M2ViIn19fQ==
+    priority: 1
+    slot: 21
+    display_name: "&8[&c&lZombified Piglin&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.zombifiedpiglin      
+    click_commands:
+    - "[player] mazlicci"    
+    
+  "fox":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRhMDM0NzQzNjQzNGViMTNkNTM3YjllYjZiNDViNmVmNGM1YTc4Zjg2ZTkxODYzZWY2MWQyYjhhNTNiODIifX19
+    priority: 2
+    slot: 22
+    display_name: "&8[&c&lFox&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cFox&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Fox** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.fox true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "fox2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRhMDM0NzQzNjQzNGViMTNkNTM3YjllYjZiNDViNmVmNGM1YTc4Zjg2ZTkxODYzZWY2MWQyYjhhNTNiODIifX19
+    priority: 1
+    slot: 22
+    display_name: "&8[&c&lFox&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.fox    
+    click_commands:
+    - "[player] mazlicci"    
+
+  "Corgi":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM5ZTQzZGI4M2E5NjZjNWI2ZjZjMDNhMTdkN2M2ZGE0YmExYjYyMmU2N2MyOGNlNjAxNzYwNzY4OWY2ZTIzMiJ9fX0=
+    priority: 2
+    slot: 23
+    display_name: "&8[&c&lCorgi&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cCorgi&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Corgi** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.corgi true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "Corgi2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM5ZTQzZGI4M2E5NjZjNWI2ZjZjMDNhMTdkN2M2ZGE0YmExYjYyMmU2N2MyOGNlNjAxNzYwNzY4OWY2ZTIzMiJ9fX0=
+    priority: 1
+    slot: 23
+    display_name: "&8[&c&lCorgi&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.corgi    
+    click_commands:
+    - "[player] mazlicci"    
+  "Lea":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0=
+    priority: 2
+    slot: 24
+    display_name: "&8[&c&lLea&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cLea&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Lea** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.lea true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "Lea2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM2OGI3NzYyMDAwNTRmN2MzNzIwNjE2NTI0ZDU1MGRkZjkyNDNmNDg5NmNkNzFlNGE2OTJmZGRkNzJjNzFlNSJ9fX0=
+    priority: 1
+    slot: 24
+    display_name: "&8[&c&lLea&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.lea   
+    click_commands:
+    - "[player] mazlicci"    
+
+
+
+  "Panda":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE4OGM5ODBhYWNmYTk0Y2YzMzA4ODUxMmIxYjk1MTdiYTgyNmIxNTRkNGNhZmMyNjJhZmY2OTc3YmU4YSJ9fX0=
+    priority: 2
+    slot: 25
+    display_name: "&8[&c&lPanda&8]"
+    lore:
+     - ""
+     - "&7Zakup si speciálního &cPanda&7 mazlíčka, "
+     - "&7který tě bude doprovázet na tvých "
+     - "&7dobrodružstvích. "
+     - ""
+     - "&7Cena: &c190 &7Tokenů "
+     - ""
+     - "&8(Vyžaduje Java edici hry a server Resource Pack) "
+     - ""
+    click_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%ecobits_token% >= 190'
+     deny_commands:
+     - "[message] &8[&c&lTheCivia&8] &6&l» &7Nemáš dostatek Tokenů, další si můžeš dokoupit v serverovém obchodu. &c/tokeny"      
+     - "[console] cmi sound entity_villager_no %player_name%"
+     - "[refresh]"
+ 
+
+    click_commands:
+    - "[console] discordsrv broadcast #1087702102303838278 Hráč **%player_name%** měl **%ecobits_token%** tokenů a právě si zakoupil **Mazlíček** - **Panda** za **190 Tokenů**."      
+    - "[console] ecobits take %player_name% token 190"      
+    - "[message] &8[&c&lTheCivia&8] &6&l» &7Zakoupil sis nového mazlíčka! Nový zůstatek Tokenů: &c%ecobits_token%<delay=10>"             
+    - "[sound] ui_cartography_table_take_result 2 5"      
+    - "[console] lp user %player_name% permission set thecivia.pet.panda true server=survival"    
+    - "[console] discordsrv broadcast #1087702102303838278 Nový zůstatek tokenů hráče **%player_name%**: **%ecobits_token%**.<delay=20>"
+    - "[refresh]"    
+
+
+  "Panda2":
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE4OGM5ODBhYWNmYTk0Y2YzMzA4ODUxMmIxYjk1MTdiYTgyNmIxNTRkNGNhZmMyNjJhZmY2OTc3YmU4YSJ9fX0=
+    priority: 1
+    slot: 25
+    display_name: "&8[&c&lPanda&8]"
+    lore:
+     - ""
+     - "&7Tohoto mazlíčka již máš koupeného. "
+     - "&7Aktivovat si ho můžeš v menu "
+     - "&c/mazlicci&7. "
+     - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: has permission
+       permission: thecivia.pet.panda   
+    click_commands:
+    - "[player] mazlicci"    
+
+
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš zakoupit různé doplňky '
+    - "&7za &cTokeny&7. "
+    - "&7"
+    - "&7Tokeny si můžeš zakoupit na: "
+    - "&cwww.obchod.thecivia.net "
+    - ""
+    - "&7Tvé tokeny:&c %ecobits_token% "
+    - ""
+    - "&8Klikni pro získání odkazu v chatu. "
+    - ""
+    left_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"          
+    right_click_commands:
+     - "[console] cmi ctext obchod %player_name%"   
+     - "[sound] ui_cartography_table_take_result 2 5"   
+
+
+#  'dalsi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+#    hide_attributes: true
+#    slot: 53
+#    display_name: "&8[&c&lDalší Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na další stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty2'      
+#    right_click_commands:
+#    - '[openmenu] recepty2'      
+#  'predchozi-strana':
+#    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+#    hide_attributes: true
+#    slot: 45
+#    display_name: "&8[&c&lPředchozí Stránka&8]"
+#    lore:
+#    - ''
+#    - '&7Klikni pro přesun na předchozí stránku. '
+#    - ""
+#    left_click_commands:
+#    - '[openmenu] recepty3'      
+#    right_click_commands:
+#    - '[openmenu] recepty3'   
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53
