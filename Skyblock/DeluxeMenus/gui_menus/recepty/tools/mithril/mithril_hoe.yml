@@ -1,0 +1,26 @@
+menu_title: 'Mithril Hoe'
+inventory_type: "WORKBENCH"
+items:
+  'Mithril_Hoe':
+    material: diamond_Hoe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#868c9aMithril Hoe"
+    lore: [] 
+  'Mithril_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:6  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 1
+    display_name: "&#868c9aMithril Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

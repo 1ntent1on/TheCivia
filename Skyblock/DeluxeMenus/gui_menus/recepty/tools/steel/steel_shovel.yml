@@ -1,0 +1,25 @@
+menu_title: 'Steel Shovel'
+inventory_type: "WORKBENCH"
+items:
+  'Steel_Shovel':
+    material: iron_shovel
+    hide_attributes: true
+    slot: 0
+    display_name: "&#71797ESteel Shovel"
+    lore: [] 
+  'Steel_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:9  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    display_name: "&#71797ESteel Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

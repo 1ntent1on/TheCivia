@@ -1,0 +1,95 @@
+menu_title: "&8▶ &0Ostrovní Obchod &8◀"
+
+
+size: 45
+
+
+items:
+
+        
+
+
+
+          
+
+  'Blocky':
+    material: grass_block
+    slot: 12
+    display_name: "&8[&c&lBlocky&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Blocky'
+    right_click_commands:
+    - '[player] is shop Blocky'
+  'Jidlo':
+    material: porkchop
+    slot: 13
+    display_name: "&8[&c&lJídlo&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Jídlo'
+    right_click_commands:
+    - '[player] is shop Jídlo'
+  'Orecka':
+    material: gold_ingot
+    slot: 14
+    display_name: "&8[&c&lOréčka&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Oréčka'
+    right_click_commands:
+    - '[player] is shop Oréčka'
+  'Farmareni':
+    material: wheat
+    slot: 21
+    display_name: "&8[&c&lFarmaření&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Farmaření'
+    right_click_commands:
+    - '[player] is shop Farmaření'
+  'MDROPY':
+    material: spider_eye
+    slot: 22
+    display_name: "&8[&c&lMob Dropy&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Mob Dropy'
+    right_click_commands:
+    - '[player] is shop Mob Dropy'
+  'ruzne':
+    material: saddle
+    slot: 23
+    display_name: "&8[&c&lRůzné&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is shop Různé'
+    right_click_commands:
+    - '[player] is shop Různé'
+  'spawnery':
+    material: spawner
+    slot: 31
+    display_name: "&8[&c&lSpawnery&8]"
+    lore: []
+    left_click_commands:
+    - '[openguimenu] Spawnery'
+    right_click_commands:
+    - '[openguimenu] Spawnery'
+
+  'zpet':
+    material: nether_star
+    slot: 40
+    display_name: "&8[&c&lZpět&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is'
+    right_click_commands:
+    - '[player] is'
+
+
+
+
+  'Sklo':
+    material: BLUE_STAINED_GLASS_PANE
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,26,27,28,29,33,34,35,41,42,43,39,38,37,10,11,15,16,20,24,30,34,28,36,44,32,33,19,25]
+    display_name: ' '

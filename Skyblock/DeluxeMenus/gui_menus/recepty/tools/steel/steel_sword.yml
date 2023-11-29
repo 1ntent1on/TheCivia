@@ -1,0 +1,24 @@
+menu_title: 'Steel Sword'
+inventory_type: "WORKBENCH"
+items:
+  'Steel_sword':
+    material: iron_sword
+    hide_attributes: true
+    slot: 0
+    display_name: "&#71797ESteel Sword"
+    lore: [] 
+  'Steel_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:9  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 5
+    display_name: "&#71797ESteel Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slot: 8   

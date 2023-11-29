@@ -1,0 +1,1580 @@
+menu_title: "&8▶ &0Recepty &8◀"
+
+
+size: 54
+
+
+items:
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš odemknout nové crafting '
+    - "&7recepty. "
+    - "&7 Některé můžeš získat za dosažení "
+    - "&7levelu v určité schopnosti nebo "
+    - "&7můžeš získat item &c'Lost Recipe'&7, "
+    - "&7díky tomu si zde můžeš daný recept "
+    - "&7odemknout. "
+    - ""
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] recepty2'      
+    right_click_commands:
+    - '[openmenu] recepty2'      
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] recepty3'      
+    right_click_commands:
+    - '[openmenu] recepty3'  
+  'sklo':
+    material: gray_stained_glass_pane
+    hide_attributes: true
+    display_name: "&8"
+    lore:
+    - ''
+    slots:
+    - 0-9
+    - 17-18
+    - 26-27
+    - 35-36
+    - 44
+    - 46-48
+    - 50-52
+
+
+  'Adamantium-set':
+    material: amethyst_shard
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 16
+    display_name: "&8[&c&lAdamantium Set&8]" 
+    lore:
+    - ''  
+  'Arandur-set':
+    material: amethyst_shard
+    nbt_int: CustomModelData:2
+    hide_attributes: true    
+    slot: 25
+    display_name: "&8[&c&lArandur Set&8]" 
+    lore:
+    - ''  
+  'Dlarun-set':
+    material: amethyst_shard
+    nbt_int: CustomModelData:5
+    hide_attributes: true    
+    slot: 34
+    display_name: "&8[&c&lDlarun Set&8]" 
+    lore:
+    - '' 
+  'Mithril-set':
+    material: amethyst_shard
+    nbt_int: CustomModelData:6
+    hide_attributes: true    
+    slot: 43
+    display_name: "&8[&c&lMithtril Set&8]" 
+    lore:
+    - ''     
+
+  'Adamantium-Sword':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 10
+    priority: 2
+    display_name: "&8[&c&lAdamantium Sword&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Sword&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"      
+  'Adamantium-Pickaxe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 11
+    priority: 2
+    display_name: "&8[&c&lAdamantium Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Pickaxe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Adamantium-Axe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 12
+    priority: 2
+    display_name: "&8[&c&lAdamantium Axe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Axe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Adamantium-Shovel':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 13
+    priority: 2
+    display_name: "&8[&c&lAdamantium Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Shovel&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Adamantium-Hoe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 14
+    priority: 2
+    display_name: "&8[&c&lAdamantium Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Hoe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Adamantium-Armor':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 15
+    priority: 2
+    display_name: "&8[&c&lAdamantium Armor&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cAdamantium Armor&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cAdamantium Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Armor"
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.adamantium_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#586056}Adamantium Armor" 
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"              
+  'Arandur-Sword':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 19
+    priority: 2
+    display_name: "&8[&c&lArandur Sword&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Sword&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"      
+  'Arandur-Pickaxe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 20
+    priority: 2
+    display_name: "&8[&c&lArandur Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Pickaxe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Arandur-Axe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 21
+    priority: 2
+    display_name: "&8[&c&lArandur Axe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Axe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Arandur-Shovel':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 22
+    priority: 2
+    display_name: "&8[&c&lArandur Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Shovel&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Arandur-Hoe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 23
+    priority: 2
+    display_name: "&8[&c&lArandur Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Hoe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Arandur-Armor':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 24
+    priority: 2
+    display_name: "&8[&c&lArandur Armor&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cArandur Armor&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cArandur Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Armor"
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.arandur_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#8cd4b9}Arandur Armor" 
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]" 
+  'Dlarun-Sword':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 28
+    priority: 2
+    display_name: "&8[&c&lDlarun Sword&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Sword&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"      
+  'Dlarun-Pickaxe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 29
+    priority: 2
+    display_name: "&8[&c&lDlarun Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Pickaxe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Dlarun-Axe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 30
+    priority: 2
+    display_name: "&8[&c&lDlarun Axe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Axe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Dlarun-Shovel':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 31
+    priority: 2
+    display_name: "&8[&c&lDlarun Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Shovel&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Dlarun-Hoe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 32
+    priority: 2
+    display_name: "&8[&c&lDlarun Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Hoe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Dlarun-Armor':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 33
+    priority: 2
+    display_name: "&8[&c&lDlarun Armor&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cDlarun Armor&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cDlarun Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Armor"
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.dlarun_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#4daceb}Dlarun Armor" 
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"     
+  'Mithril-Sword':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 37
+    priority: 2
+    display_name: "&8[&c&lMithril Sword&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Sword&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"      
+  'Mithril-Pickaxe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 38
+    priority: 2
+    display_name: "&8[&c&lMithril Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Pickaxe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Mithril-Axe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 39
+    priority: 2
+    display_name: "&8[&c&lMithril Axe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Axe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Mithril-Shovel':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 40
+    priority: 2
+    display_name: "&8[&c&lMithril Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Shovel&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Mithril-Hoe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 41
+    priority: 2
+    display_name: "&8[&c&lMithril Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Hoe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Mithril-Armor':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 42
+    priority: 2
+    display_name: "&8[&c&lMithril Armor&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cMithril Armor&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cMithril Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Armor"
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.mithril_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#868c9a}Mithril Armor" 
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"  
+  'Adamantium-Sword-2':
+    material: iron_sword
+    hide_attributes: true    
+    slot: 10
+    priority: 1
+    display_name: "&8[&c&lAdamantium Sword&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_sword  
+    right_click_commands:
+    - '[openmenu] adamantium_sword'       
+    left_click_commands:
+    - '[openmenu] adamantium_sword'  
+
+  'Adamantium-Pickaxe-2':
+    material: iron_pickaxe
+    hide_attributes: true    
+    slot: 11
+    priority: 1
+    display_name: "&8[&c&lAdamantium Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_pickaxe
+    right_click_commands:
+    - '[openmenu] adamantium_pickaxe'       
+    left_click_commands:
+    - '[openmenu] adamantium_pickaxe'         
+  'Adamantium-Axe-2':
+    material: iron_axe
+    hide_attributes: true    
+    slot: 12
+    priority: 1
+    display_name: "&8[&c&lAdamantium Axe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_axe
+    right_click_commands:
+    - '[openmenu] adamantium_axe'       
+    left_click_commands:
+    - '[openmenu] adamantium_axe'         
+  'Adamantium-Shovel-2':
+    material: iron_shovel
+    hide_attributes: true    
+    slot: 13
+    priority: 1
+    display_name: "&8[&c&lAdamantium Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_shovel
+    right_click_commands:
+    - '[openmenu] adamantium_shovel'       
+    left_click_commands:
+    - '[openmenu] adamantium_shovel'         
+  'Adamantium-Hoe-2':
+    material: iron_hoe
+    hide_attributes: true    
+    slot: 14
+    priority: 1
+    display_name: "&8[&c&lAdamantium Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_hoe
+    right_click_commands:
+    - '[openmenu] adamantium_hoe'       
+    left_click_commands:
+    - '[openmenu] adamantium_hoe'         
+  'Adamantium-Armor-2':
+    material: iron_chestplate
+    hide_attributes: true    
+    slot: 15
+    priority: 1
+    display_name: "&8[&c&lAdamantium Armor&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.adamantium_armor    
+  'Arandur-Sword-2':
+    material: diamond_sword
+    hide_attributes: true    
+    slot: 19
+    priority: 1
+    display_name: "&8[&c&lArandur Sword&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_sword   
+    right_click_commands:
+    - '[openmenu] arandur_sword'       
+    left_click_commands:
+    - '[openmenu] arandur_sword'               
+  'Arandur-Pickaxe-2':
+    material: diamond_pickaxe
+    hide_attributes: true    
+    slot: 20
+    priority: 1
+    display_name: "&8[&c&lArandur Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_pickaxe
+    right_click_commands:
+    - '[openmenu] arandur_pickaxe'       
+    left_click_commands:
+    - '[openmenu] arandur_pickaxe'                
+  'Arandur-Axe-2':
+    material: diamond_axe
+    hide_attributes: true    
+    slot: 21
+    priority: 1
+    display_name: "&8[&c&lArandur Axe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_axe
+    right_click_commands:
+    - '[openmenu] arandur_axe'       
+    left_click_commands:
+    - '[openmenu] arandur_axe'                
+  'Arandur-Shovel-2':
+    material: diamond_shovel
+    hide_attributes: true    
+    slot: 22
+    priority: 1
+    display_name: "&8[&c&lArandur Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_shovel
+    right_click_commands:
+    - '[openmenu] arandur_shovel'       
+    left_click_commands:
+    - '[openmenu] arandur_shovel'                
+  'Arandur-Hoe-2':
+    material: diamond_hoe
+    hide_attributes: true    
+    slot: 23
+    priority: 1
+    display_name: "&8[&c&lArandur Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_hoe
+    right_click_commands:
+    - '[openmenu] arandur_hoe'       
+    left_click_commands:
+    - '[openmenu] arandur_hoe'                
+  'Arandur-Armor-2':
+    material: diamond_chestplate
+    hide_attributes: true    
+    slot: 24
+    priority: 1
+    display_name: "&8[&c&lArandur Armor&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.arandur_armor                               
+  'Dlarun-Sword-2':
+    material: iron_sword
+    hide_attributes: true    
+    slot: 28
+    priority: 1
+    display_name: "&8[&c&lDlarun Sword&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_sword       
+  'Dlarun-Pickaxe-2':
+    material: iron_pickaxe
+    hide_attributes: true    
+    slot: 29
+    priority: 1
+    display_name: "&8[&c&lDlarun Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_pickaxe
+  'Dlarun-Axe-2':
+    material: iron_axe
+    hide_attributes: true    
+    slot: 30
+    priority: 1
+    display_name: "&8[&c&lDlarun Axe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_axe
+  'Dlarun-Shovel-2':
+    material: iron_shovel
+    hide_attributes: true    
+    slot: 31
+    priority: 1
+    display_name: "&8[&c&lDlarun Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_shovel
+  'Dlarun-Hoe-2':
+    material: iron_hoe
+    hide_attributes: true    
+    slot: 32
+    priority: 1
+    display_name: "&8[&c&lDlarun Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_hoe
+  'Dlarun-Armor-2':
+    material: iron_chestplate
+    hide_attributes: true    
+    slot: 33
+    priority: 1
+    display_name: "&8[&c&lDlarun Armor&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.dlarun_armor                               
+  'Mithril-Sword-2':
+    material: diamond_sword
+    hide_attributes: true    
+    slot: 37
+    priority: 1
+    display_name: "&8[&c&lMithril Sword&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_sword       
+  'Mithril-Pickaxe-2':
+    material: diamond_pickaxe
+    hide_attributes: true    
+    slot: 38
+    priority: 1
+    display_name: "&8[&c&lMithril Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_pickaxe
+  'Mithril-Axe-2':
+    material: diamond_axe
+    hide_attributes: true    
+    slot: 39
+    priority: 1
+    display_name: "&8[&c&lMithril Axe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_axe
+  'Mithril-Shovel-2':
+    material: diamond_shovel
+    hide_attributes: true    
+    slot: 40
+    priority: 1
+    display_name: "&8[&c&lMithril Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_shovel
+  'Mithril-Hoe-2':
+    material: diamond_hoe
+    hide_attributes: true    
+    slot: 41
+    priority: 1
+    display_name: "&8[&c&lMithril Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_hoe
+  'Mithril-Armor-2':
+    material: diamond_chestplate
+    hide_attributes: true    
+    slot: 42
+    priority: 1
+    display_name: "&8[&c&lMithril Armor&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    - "&7Klikni pro prohlédnutí receptu. "
+    - ""
+    view_requirement:
+     requirements:  
+      permisse_skyblock_recept:
+       type: "has permission"
+       permission: skyblock.recept.mithril_armor                                                        

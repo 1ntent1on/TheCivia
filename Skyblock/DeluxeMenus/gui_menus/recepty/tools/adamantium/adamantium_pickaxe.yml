@@ -1,0 +1,27 @@
+menu_title: 'Adamantium Pickaxe'
+inventory_type: "WORKBENCH"
+items:
+  'Adamantium_Pickaxe':
+    material: iron_pickaxe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#586056Adamantium Pickaxe"
+    lore: [] 
+  'Adamantium_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:1 
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1     
+    slots:
+    - 2
+    - 1
+    - 3
+    display_name: "&#586056Adamantium Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

@@ -1,0 +1,27 @@
+menu_title: 'Arandur Axe'
+inventory_type: "WORKBENCH"
+items:
+  'Arandur_axe':
+    material: diamond_axe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#8cd4b9Arandur Axe"
+    lore: [] 
+  'Arandur_ingot':
+    material: brick
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1
+    nbt_int: CustomModelData:2  
+    slots:
+    - 2
+    - 1
+    - 4
+    display_name: "&#8cd4b9Arandur Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

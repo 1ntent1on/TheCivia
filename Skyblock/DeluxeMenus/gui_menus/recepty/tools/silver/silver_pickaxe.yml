@@ -1,0 +1,27 @@
+menu_title: 'Silver Pickaxe'
+inventory_type: "WORKBENCH"
+items:
+  'Silver_Pickaxe':
+    material: iron_pickaxe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#C0C0C0Silver Pickaxe"
+    lore: [] 
+  'Silver_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:8 
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1     
+    slots:
+    - 2
+    - 1
+    - 3
+    display_name: "&#C0C0C0Silver Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

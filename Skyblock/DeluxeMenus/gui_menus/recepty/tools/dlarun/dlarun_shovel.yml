@@ -1,0 +1,25 @@
+menu_title: 'Dlarun Shovel'
+inventory_type: "WORKBENCH"
+items:
+  'Dlarun_Shovel':
+    material: iron_shovel
+    hide_attributes: true
+    slot: 0
+    display_name: "&#4dacebDlarun Shovel"
+    lore: [] 
+  'Dlarun_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:5  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    display_name: "&#4dacebDlarun Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

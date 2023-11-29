@@ -1,0 +1,151 @@
+menu_title: '&8▶ &0Skyblock Menu &8◀'
+
+
+size: 54
+
+items:
+  'Profil':
+    material: head-%player_name%
+    hide_attributes: true
+    slot: 10
+    display_name: "&8[&c&lTvůj Profil&8]"
+    lore:
+    - ''
+    - ' &c❤ Život: &c%player_max_health_rounded% '
+    - " %ecoskills_defense_name%&c %ecoskills_defense_base% &e%ecoskills_defense_bonus%"
+    - " %ecoskills_strength_name%&c %ecoskills_strength_base% &e%ecoskills_strength_bonus%"
+    - " %ecoskills_crit_chance_name%&c %ecoskills_crit_chance_base%% &e%ecoskills_crit_chance_bonus%"
+    - " %ecoskills_crit_damage_name%&c %ecoskills_crit_damage_base% &e%ecoskills_crit_damage_bonus%"
+    - " %ecoskills_speed_name%&c %ecoskills_speed_base% &e%ecoskills_speed_bonus%"
+    - " %ecoskills_wisdom_name%&c %ecoskills_wisdom_base% &e%ecoskills_wisdom_bonus%"
+    - " %ecoskills_ferocity_name%&c %ecoskills_ferocity_base% &e%ecoskills_ferocity_bonus%"
+    - '&7'
+    - '&7Skill Level: &c%ecoskills_total_skill_level%'
+    - '&7Průměrný Skill Level: &c%ecoskills_average_skill_level%'
+    - '&7'
+    left_click_commands:
+    - '[openguimenu] profil'     
+    right_click_commands:
+    - '[openguimenu] profil'       
+  'Skilly':
+    material: diamond_sword
+    hide_attributes: true
+    slot: 19
+    display_name: "&8[&c&lSkilly&8]"
+    lore:
+    - ''
+    - "&7Skilly jsou důležitou součástí celého Skyblocku. "
+    - '&7Umožní ti získávat nové možnosti a vzácné odměny '
+    - "&7za splnění určitých milníků. "
+    - '&7'
+    left_click_commands:
+    - '[player] skills'     
+    right_click_commands:
+    - '[player] skills'         
+  'Recepty':
+    material: knowledge_book
+    hide_attributes: true
+    slot: 20
+    display_name: "&8[&c&lKniha Receptů&8]"
+    lore:
+    - ''
+    - "&7Postupným hraním na serveru se budeš učit nové "
+    - '&7recepty k vytváření speciálních itemů. Zde '
+    - "&7nalezneš jejich úplný seznam. "
+    - '&7'
+    - "&7Nové recepty si můžeš odemknout u NPC na spawnu. "
+    - ""
+    left_click_commands:
+    - '[openguimenu] recepty'       
+    right_click_commands:
+    - '[openguimenu] recepty'      
+  'trady':
+    material: emerald
+    hide_attributes: true
+    slot: 21
+    display_name: "&8[&c&lVýměny&8]"
+    lore:
+    - ''
+    - "&7Prohlédni si menu rychlých výměn itemů. "
+    - '&7Postupem hraní si budeš odemykat nové '
+    - "&7položky. "
+    - ""
+    left_click_commands:
+    - '[openguimenu] trady'       
+    right_click_commands:
+    - '[openguimenu] trady'       
+  'storage':
+    material: chest
+    hide_attributes: true
+    slot: 25
+    display_name: "&8[&c&lSklad&8]"
+    lore:
+    - ''
+    - "&7Do skladu si můžeš volně ukládat tvé "
+    - '&7itemy. Postupným hraním budeš získávat '
+    - "&7více místa. "
+    - ""
+    left_click_commands:
+    - '[openguimenu] trady'       
+    right_click_commands:
+    - '[openguimenu] trady'        
+  'svet':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTFiMzE4OGZkNDQ5MDJmNzI2MDJiZDdjMjE0MWY1YTcwNjczYTQxMWFkYjNkODE4NjJjNjllNTM2MTY2YiJ9fX0=
+    hide_attributes: true
+    slot: 16
+    display_name: "&8[&c&lRychlá Teleportace&8]"
+    lore:
+    - ''
+    - "&7Teleportuj se do určitých míst, "
+    - '&7která jsi již objevil. '
+    - ""
+    left_click_commands:
+    - '[openguimenu] teleport'       
+    right_click_commands:
+    - '[openguimenu] teleport'       
+  'crafting':
+    material: crafting_table
+    hide_attributes: true
+    slot: 30
+    display_name: "&8[&c&lWorkbench&8]"
+    lore:
+    - ''
+    - "&7Otevři si volně dostupný crafting table. "
+    - ""
+    left_click_commands:
+    - '[console] cmi workbench %player_name%'       
+    right_click_commands:
+    - '[console] cmi workbench %player_name%'       
+  'questy':
+    material: written_book
+    hide_attributes: true
+    hide_effects: true
+    slot: 22
+    display_name: "&8[&c&lQuesty&8]"
+    lore:
+    - ''
+    - "&7Po celou dobu hraní budeš prováděn "
+    - "&7různými questy. Zde nalezneš jejich "
+    - "&7rychlý přehled."
+    - ""
+    left_click_commands:
+    - '[openguimenu] questy'       
+    right_click_commands:
+    - '[openguimenu] questy'       
+  'ostrov':
+    material: grass_block
+    hide_attributes: true
+    hide_effects: true
+    slot: 30
+    display_name: "&8[&c&lOstrov&8]"
+    lore:
+    - ''
+    - "&7Svůj ostrov si můžeš upravovat a  "
+    - "&7vylepšeovat dle svých představ. "
+    - "&7Zde nalezneš kompletní přehled "
+    - "&7všech tvých možností. "
+    - ""
+    left_click_commands:
+    - '[openguimenu] ostrov'       
+    right_click_commands:
+    - '[openguimenu] ostrov'       

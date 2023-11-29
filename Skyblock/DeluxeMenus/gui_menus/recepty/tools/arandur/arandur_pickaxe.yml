@@ -1,0 +1,27 @@
+menu_title: 'Arandur Pickaxe'
+inventory_type: "WORKBENCH"
+items:
+  'Arandur_Pickaxe':
+    material: diamond_pickaxe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#8cd4b9Arandur Pickaxe"
+    lore: [] 
+  'Arandur_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:2 
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1     
+    slots:
+    - 2
+    - 1
+    - 3
+    display_name: "&#8cd4b9Arandur Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

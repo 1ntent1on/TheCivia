@@ -1,0 +1,24 @@
+menu_title: 'Arandur Sword'
+inventory_type: "WORKBENCH"
+items:
+  'Arandur_sword':
+    material: diamond_sword
+    hide_attributes: true
+    slot: 0
+    display_name: "&#8cd4b9Arandur Sword"
+    lore: [] 
+  'Arandur_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:2  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 5
+    display_name: "&#8cd4b9Arandur Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slot: 8   

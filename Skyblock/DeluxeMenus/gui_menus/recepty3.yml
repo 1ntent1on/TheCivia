@@ -1,0 +1,422 @@
+menu_title: "&8▶ &0Recepty &8◀"
+
+
+size: 54
+
+
+items:
+
+
+  'Info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzM2U3YmIxMjU2YTEyYjVjODhlNzA1ZjIxMjc0ZmQ4NjE4YmJkZTkzYzBkZDNlMjJkOWRiY2YwYjNhMTJiMyJ9fX0=
+    hide_attributes: true
+    slot: 49
+    display_name: "&8[&c&lInfo&8]"
+    lore:
+    - ''
+    - '&7Zde si můžeš odemknout nové crafting '
+    - "&7recepty. "
+    - "&7 Některé můžeš získat za dosažení "
+    - "&7levelu v určité schopnosti nebo "
+    - "&7můžeš získat item &c'Lost Recipe'&7, "
+    - "&7díky tomu si zde můžeš daný recept "
+    - "&7odemknout. "
+    - ""
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] recepty1'      
+    right_click_commands:
+    - '[openmenu] recepty1'      
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    left_click_commands:
+    - '[openmenu] recepty2'      
+    right_click_commands:
+    - '[openmenu] recepty2'  
+  'sklo':
+    material: gray_stained_glass_pane
+    hide_attributes: true
+    display_name: "&8"
+    lore:
+    - ''
+    slots:
+    - 0-9
+    - 17-18
+    - 26-27
+    - 35-36
+    - 44
+    - 46-48
+    - 50-52
+
+
+  'Orichalcum-set':
+    material: amethyst_shard
+    nbt_int: CustomModelData:7  
+    hide_attributes: true    
+    slot: 16
+    display_name: "&8[&c&lOrichalcum Set&8]" 
+    lore:
+    - ''    
+  'Orichalcum-Sword':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 10
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Sword&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Sword&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Sword%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_sword true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Sword"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"      
+  'Orichalcum-Pickaxe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 11
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Pickaxe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Pickaxe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_pickaxe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Pickaxe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Orichalcum-Axe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 12
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Axe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Axe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Axe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_axe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Axe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Orichalcum-Shovel':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 13
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Shovel&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Shovel%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_shovel true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Shovel"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Orichalcum-Hoe':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 14
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Hoe&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Hoe%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_hoe true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Hoe"  
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."        
+    - "[refresh]"  
+  'Orichalcum-Armor':
+    material: paper
+    nbt_int: CustomModelData:1  
+    hide_attributes: true    
+    slot: 15
+    priority: 2
+    display_name: "&8[&c&lOrichalcum Armor&8]" 
+    lore:
+    - ''  
+    - '&7Odemkni si &cOrichalcum Armor&7 crafting '
+    - "&7recept! "
+    - "&7Musíš ale mít '&cLost Recipe'&7, který "
+    - "&7obsahuje tento recept. "
+    - ""
+    right_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."          
+    left_click_requirement:
+     requirements:
+      bila:
+       type: string equals
+       input: '%checkitem_remove_mat:paper,amt:1,namecontains:Lost Recipe,lorecontains:&cOrichalcum Armor%'
+       output: 'yes'
+     deny_commands:
+     - "[message] &8[&c&lSkyblock&8] &6» &cNemáš tento recept."   
+
+    left_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Armor"
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"                                                         
+    right_click_commands:
+    - "[console] lp user %player_name% permission set skyblock.recept.orichalcum_armor true server=skyblock"
+    - "[sound] ui_cartography_table_take_result 2 5"  
+    - "[console] cmi titlemsg %player_name% &c&lRecept Odemčen!\n{#DFBB90}Orichalcum Armor" 
+    - "[message] &8[&c&lSkyblock&8] &6» &aRecept Odemčen."               
+    - "[refresh]"  
+  'Orichalcum-Sword-2':
+    material: golden_sword
+    hide_attributes: true    
+    slot: 10
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Sword&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_sword       
+  'Orichalcum-Pickaxe-2':
+    material: golden_pickaxe
+    hide_attributes: true    
+    slot: 11
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Pickaxe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_pickaxe
+  'Orichalcum-Axe-2':
+    material: golden_axe
+    hide_attributes: true    
+    slot: 12
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Axe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_axe
+  'Orichalcum-Shovel-2':
+    material: golden_shovel
+    hide_attributes: true    
+    slot: 13
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Shovel&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_shovel
+  'Orichalcum-Hoe-2':
+    material: golden_hoe
+    hide_attributes: true    
+    slot: 14
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Hoe&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_hoe
+  'Orichalcum-Armor-2':
+    material: golden_chestplate
+    hide_attributes: true    
+    slot: 15
+    priority: 1
+    display_name: "&8[&c&lOrichalcum Armor&8]" 
+    lore:
+    - ''  
+    - '&7Tento recept máš již odemčený. '
+    - ""
+    view_requirement:
+     requirements:  
+      resourcepack_permisse_survival:
+       type: "has permission"
+       permission: skyblock.recept.orichalcum_armor                                       

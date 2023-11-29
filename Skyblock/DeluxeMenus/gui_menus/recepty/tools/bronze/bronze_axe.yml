@@ -1,0 +1,27 @@
+menu_title: 'Bronze Axe'
+inventory_type: "WORKBENCH"
+items:
+  'Bronze_axe':
+    material: golden_axe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#CD7F32Bronze Axe"
+    lore: [] 
+  'Bronze_ingot':
+    material: brick
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1
+    nbt_int: CustomModelData:4  
+    slots:
+    - 2
+    - 1
+    - 4
+    display_name: "&#CD7F32Bronze Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

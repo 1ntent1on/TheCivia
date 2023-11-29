@@ -1,0 +1,430 @@
+menu_title: "&8▶ &0Ostrovní Obchod | Spawnery &8◀"
+
+
+size: 45
+
+
+items:
+
+        
+
+
+
+
+  'spawner-1':
+    material: spawner
+    slot: 11
+    display_name: "&8[&c&lCow Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$75K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"
+    - "[console] bs give %player_name% Cow 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"    
+    - "[console] bs give %player_name% Cow 1"                  
+
+  'spawner-2':
+    material: spawner
+    slot: 12
+    display_name: "&8[&c&lPig Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$70K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 70000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 70000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 70000"
+    - "[console] bs give %player_name% Pig 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 70000"    
+    - "[console] bs give %player_name% Pig 1"      
+
+
+  'spawner-3':
+    material: spawner
+    slot: 13
+    display_name: "&8[&c&lSheep Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$75K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"
+    - "[console] bs give %player_name% Sheep 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"    
+    - "[console] bs give %player_name% Sheep 1"      
+
+  'spawner-4':
+    material: spawner
+    slot: 14
+    display_name: "&8[&c&lChicken Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$65K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 65000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 65000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 65000"
+    - "[console] bs give %player_name% Chicken 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 65000"    
+    - "[console] bs give %player_name% Chicken 1"      
+
+  'spawner-5':
+    material: spawner
+    slot: 15
+    display_name: "&8[&c&lSquid Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$50K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 50000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 50000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 50000"
+    - "[console] bs give %player_name% Squid 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 50000"    
+    - "[console] bs give %player_name% Squid 1"          
+
+  'spawner-6':
+    material: spawner
+    slot: 20
+    display_name: "&8[&c&lZombie Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$75K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"
+    - "[console] bs give %player_name% Zombie 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"    
+    - "[console] bs give %player_name% Zombie 1"      
+
+  'spawner-7':
+    material: spawner
+    slot: 21
+    display_name: "&8[&c&lSkeleton Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$75K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 75000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"
+    - "[console] bs give %player_name% Skeleton 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 75000"    
+    - "[console] bs give %player_name% Skeleton 1"      
+
+  'spawner-8':
+    material: spawner
+    slot: 22
+    display_name: "&8[&c&lSpider Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$60K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 60000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 60000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 60000"
+    - "[console] bs give %player_name% Spider 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 60000"    
+    - "[console] bs give %player_name% Spider 1"      
+
+
+  'spawner-9':
+    material: spawner
+    slot: 23
+    display_name: "&8[&c&lCreeper Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$95K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 95000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 95000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 95000"
+    - "[console] bs give %player_name% Creeper 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 95000"    
+    - "[console] bs give %player_name% Creeper 1"      
+
+
+  'spawner-10':
+    material: spawner
+    slot: 24
+    display_name: "&8[&c&lZombified Piglin Spawner&8]" 
+    lore:
+    - ''
+    - '&7Kupní cena: &a$100K '
+    - "&cTato věc se nedá prodat! "
+    - ""
+    - "&c&l[!] &7Klikni levým pro koupi. "
+    - ""              
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 100000'   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 100000' 
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Nemáš dostatek financí."  
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 100000"
+    - "[console] bs give %player_name% Zombified_Piglin 1"             
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si spawner!" 
+    - "[console] money take %player_name% 100000"    
+    - "[console] bs give %player_name% Zombified_Piglin 1"                      
+
+  'zpet':
+    material: nether_star
+    slot: 40
+    display_name: "&8[&c&lZpět&8]"
+    lore: []
+    left_click_commands:
+    - '[player] is'
+    right_click_commands:
+    - '[player] is'
+
+  'Sklo':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [31,0,1,2,3,4,5,6,7,8,9,17,18,26,27,28,29,33,34,35,41,42,43,39,38,37,10,11,15,16,20,24,30,34,28,36,44,32,33,19,25]
+    display_name: ' '

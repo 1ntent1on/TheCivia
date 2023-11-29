@@ -1,0 +1,27 @@
+menu_title: 'Brass Axe'
+inventory_type: "WORKBENCH"
+items:
+  'Brass_axe':
+    material: golden_axe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#b5a642Brass Axe"
+    lore: [] 
+  'Brass_ingot':
+    material: brick
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1
+    nbt_int: CustomModelData:3  
+    slots:
+    - 2
+    - 1
+    - 4
+    display_name: "&#b5a642Brass Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

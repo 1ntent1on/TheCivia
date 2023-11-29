@@ -1,0 +1,27 @@
+menu_title: 'Brass Pickaxe'
+inventory_type: "WORKBENCH"
+items:
+  'Brass_Pickaxe':
+    material: golden_pickaxe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#b5a642Brass Pickaxe"
+    lore: [] 
+  'Brass_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:3 
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1     
+    slots:
+    - 2
+    - 1
+    - 3
+    display_name: "&#b5a642Brass Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

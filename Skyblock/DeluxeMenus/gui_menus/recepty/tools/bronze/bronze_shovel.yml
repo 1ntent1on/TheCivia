@@ -1,0 +1,25 @@
+menu_title: 'Bronze Shovel'
+inventory_type: "WORKBENCH"
+items:
+  'Bronze_Shovel':
+    material: golden_shovel
+    hide_attributes: true
+    slot: 0
+    display_name: "&#CD7F32Bronze Shovel"
+    lore: [] 
+  'Bronze_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:4  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    display_name: "&#CD7F32Bronze Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

@@ -1,0 +1,27 @@
+menu_title: 'Mithril Pickaxe'
+inventory_type: "WORKBENCH"
+items:
+  'Mithril_Pickaxe':
+    material: diamond_pickaxe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#868c9aMithril Pickaxe"
+    lore: [] 
+  'Mithril_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:6 
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1     
+    slots:
+    - 2
+    - 1
+    - 3
+    display_name: "&#868c9aMithril Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

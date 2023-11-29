@@ -1,0 +1,26 @@
+menu_title: 'Arandur Hoe'
+inventory_type: "WORKBENCH"
+items:
+  'Arandur_Hoe':
+    material: diamond_Hoe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#8cd4b9Arandur Hoe"
+    lore: [] 
+  'Arandur_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:2  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 1
+    display_name: "&#8cd4b9Arandur Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

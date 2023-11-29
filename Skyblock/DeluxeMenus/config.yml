@@ -1,0 +1,116 @@
+# DeluxeMenus 1.13.6-DEV-null main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  Main:
+    file: main.yml
+  Farmy:
+    file: farmy.yml
+  Spawnery:
+    file: spawnery.yml
+  Ishop:
+    file: isshop.yml
+  Test:
+    file: test.yml
+  Trady:
+    file: trady.yml
+  Recepty1:
+    file: recepty1.yml
+  Recepty2:
+    file: recepty2.yml
+  Recepty3:
+    file: recepty3.yml
+  Adamantium_Sword:
+    file: recepty/tools/adamantium/adamantium_sword.yml
+  Adamantium_Axe:
+    file: recepty/tools/adamantium/adamantium_axe.yml
+  Adamantium_Pickaxe:
+    file: recepty/tools/adamantium/adamantium_pickaxe.yml
+  Adamantium_Shovel:
+    file: recepty/tools/adamantium/adamantium_shovel.yml
+  Adamantium_Hoe:
+    file: recepty/tools/adamantium/adamantium_hoe.yml
+  Arandur_Sword:
+    file: recepty/tools/arandur/arandur_sword.yml
+  Arandur_Axe:
+    file: recepty/tools/arandur/arandur_axe.yml
+  Arandur_Pickaxe:
+    file: recepty/tools/arandur/arandur_pickaxe.yml
+  Arandur_Shovel:
+    file: recepty/tools/arandur/arandur_shovel.yml
+  Arandur_Hoe:
+    file: recepty/tools/arandur/arandur_hoe.yml
+  Dlarun_Sword:
+    file: recepty/tools/dlarun/dlarun_sword.yml
+  Dlarun_Axe:
+    file: recepty/tools/dlarun/dlarun_axe.yml
+  Dlarun_Pickaxe:
+    file: recepty/tools/dlarun/dlarun_pickaxe.yml
+  Dlarun_Shovel:
+    file: recepty/tools/dlarun/dlarun_shovel.yml
+  Dlarun_Hoe:
+    file: recepty/tools/dlarun/dlarun_hoe.yml
+  Mithril_Sword:
+    file: recepty/tools/mithril/mithril_sword.yml
+  Mithril_Axe:
+    file: recepty/tools/mithril/mithril_axe.yml
+  Mithril_Pickaxe:
+    file: recepty/tools/mithril/mithril_pickaxe.yml
+  Mithril_Shovel:
+    file: recepty/tools/mithril/mithril_shovel.yml
+  Mithril_Hoe:
+    file: recepty/tools/mithril/mithril_hoe.yml
+  Bronze_Sword:
+    file: recepty/tools/bronze/bronze_sword.yml
+  Bronze_Axe:
+    file: recepty/tools/bronze/bronze_axe.yml
+  Bronze_Pickaxe:
+    file: recepty/tools/bronze/bronze_pickaxe.yml
+  Bronze_Shovel:
+    file: recepty/tools/bronze/bronze_shovel.yml
+  Bronze_Hoe:
+    file: recepty/tools/bronze/bronze_hoe.yml
+  Brass_Sword:
+    file: recepty/tools/brass/brass_sword.yml
+  Brass_Axe:
+    file: recepty/tools/brass/brass_axe.yml
+  Brass_Pickaxe:
+    file: recepty/tools/brass/brass_pickaxe.yml
+  Brass_Shovel:
+    file: recepty/tools/brass/brass_shovel.yml
+  Brass_Hoe:
+    file: recepty/tools/brass/brass_hoe.yml
+  Steel_Sword:
+    file: recepty/tools/steel/steel_sword.yml
+  Steel_Axe:
+    file: recepty/tools/steel/steel_axe.yml
+  Steel_Pickaxe:
+    file: recepty/tools/steel/steel_pickaxe.yml
+  Steel_Shovel:
+    file: recepty/tools/steel/steel_shovel.yml
+  Steel_Hoe:
+    file: recepty/tools/steel/steel_hoe.yml
+  Silver_Sword:
+    file: recepty/tools/silver/silver_sword.yml
+  Silver_Axe:
+    file: recepty/tools/silver/silver_axe.yml
+  Silver_Pickaxe:
+    file: recepty/tools/silver/silver_pickaxe.yml
+  Silver_Shovel:
+    file: recepty/tools/silver/silver_shovel.yml
+  Silver_Hoe:
+    file: recepty/tools/silver/silver_hoe.yml
+  Orichalcum_Sword:
+    file: recepty/tools/orichalcum/orichalcum_sword.yml
+  Orichalcum_Axe:
+    file: recepty/tools/orichalcum/orichalcum_axe.yml
+  Orichalcum_Pickaxe:
+    file: recepty/tools/orichalcum/orichalcum_pickaxe.yml
+  Orichalcum_Shovel:
+    file: recepty/tools/orichalcum/orichalcum_shovel.yml
+  Orichalcum_Hoe:
+    file: recepty/tools/orichalcum/orichalcum_hoe.yml

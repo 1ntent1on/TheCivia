@@ -1,0 +1,884 @@
+menu_title: "&8▶ &0Farmy &8◀"
+
+
+size: 45
+
+
+items:
+
+        
+
+
+
+
+  'farma3-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 11
+    display_name: "&8[&c&lExtra Farma - 3&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, třetí "
+    - "&7slot tě vyjde na: &c1000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 5 "
+    - ""  
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: betterfarming.total.2     
+
+
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1000'   
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 5'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 5'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 5'           
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1000' 
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 5'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 5'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 5'            
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1000"
+    - "[console] lp user %player_name% permission set betterfarming.total.3"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.2"             
+    - "[console] lp user %player_name% permission set dm.farma3" 
+
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1000"
+    - "[console] lp user %player_name% permission set betterfarming.total.3" 
+    - "[console] lp user %player_name% permission unset betterfarming.total.2"             
+    - "[console] lp user %player_name% permission set dm.farma3" 
+
+#----
+
+  'farma4-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 10
+    display_name: "&8[&c&lExtra Farma - 4&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, čtvrtá "
+    - "&7slot tě vyjde na: &c5000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 10 "    
+    - "" 
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma3      
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 5000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma3   
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 10'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 10'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 10'              
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 5000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma3    
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 10'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 10'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 10'            
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 5000"
+    - "[console] lp user %player_name% permission set betterfarming.total.4"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.3"    
+    - "[console] lp user %player_name% permission set dm.farma4"
+    - "[console] lp user %player_name% permission unset dm.farma3"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 5000"
+    - "[console] lp user %player_name% permission set betterfarming.total.4"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.3"    
+    - "[console] lp user %player_name% permission set dm.farma4"
+    - "[console] lp user %player_name% permission unset dm.farma3"            
+
+#----
+
+  'farma5-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 9
+    display_name: "&8[&c&lExtra Farma - 5&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, pátá "
+    - "&7slot tě vyjde na: &c15000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 15 "    
+    - "" 
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma4     
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 15000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma4
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 15'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 15'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 15'                
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 15000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma4    
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 15'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 15'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 15'           
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 15000"
+    - "[console] lp user %player_name% permission set betterfarming.total.5"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.4"    
+    - "[console] lp user %player_name% permission set dm.farma5"
+    - "[console] lp user %player_name% permission unset dm.farma4"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 15000"
+    - "[console] lp user %player_name% permission set betterfarming.total.5"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.4"    
+    - "[console] lp user %player_name% permission set dm.farma5"
+    - "[console] lp user %player_name% permission unset dm.farma4"       
+
+
+#----
+
+  'farma6-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 8
+    display_name: "&8[&c&lExtra Farma - 6&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, šestá "
+    - "&7slot tě vyjde na: &c50000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 20 "    
+    - "" 
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma5     
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 50000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma5 
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 20'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 20'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 20'              
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 50000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma5  
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 20'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 20'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 20'             
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission set betterfarming.total.6"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.5"    
+    - "[console] lp user %player_name% permission set dm.farma6"
+    - "[console] lp user %player_name% permission unset dm.farma5"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 50000"
+    - "[console] lp user %player_name% permission set betterfarming.total.6"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.5"    
+    - "[console] lp user %player_name% permission set dm.farma6"
+    - "[console] lp user %player_name% permission unset dm.farma5"    
+
+
+#----
+
+  'farma7-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 7
+    display_name: "&8[&c&lExtra Farma - 7&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, sedmá "
+    - "&7slot tě vyjde na: &c100000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 25 "    
+    - "" 
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma6    
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 100000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma6  
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 25'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 25'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 25'             
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 100000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma6   
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 25'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 25'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 25'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 100000"
+    - "[console] lp user %player_name% permission set betterfarming.total.7"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.6"    
+    - "[console] lp user %player_name% permission set dm.farma7"
+    - "[console] lp user %player_name% permission unset dm.farma6"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 100000"
+    - "[console] lp user %player_name% permission set betterfarming.total.7"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.6"    
+    - "[console] lp user %player_name% permission set dm.farma7"
+    - "[console] lp user %player_name% permission unset dm.farma6"     
+
+
+#----
+
+  'farma8-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 6
+    display_name: "&8[&c&lExtra Farma - 8&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, osmá "
+    - "&7slot tě vyjde na: &c250000$ "
+    - "" 
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 30 "  
+    - ""  
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma7 
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 250000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma7    
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 30'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 30'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 30'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 250000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma7  
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 30'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 30'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 30'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 250000"
+    - "[console] lp user %player_name% permission set betterfarming.total.8"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.7"    
+    - "[console] lp user %player_name% permission set dm.farma8"
+    - "[console] lp user %player_name% permission unset dm.farma7"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 250000"
+    - "[console] lp user %player_name% permission set betterfarming.total.8"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.7"    
+    - "[console] lp user %player_name% permission set dm.farma8"
+    - "[console] lp user %player_name% permission unset dm.farma7"      
+
+
+#----
+
+  'farma9-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 5
+    display_name: "&8[&c&lExtra Farma - 9&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, devátá "
+    - "&7slot tě vyjde na: &c500000$ "
+    - "" 
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 35 "
+    - ""    
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma8
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 500000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma8   
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 35'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 35'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 35'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 500000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma8 
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 35'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 35'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 35'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 500000"
+    - "[console] lp user %player_name% permission set betterfarming.total.9"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.8"    
+    - "[console] lp user %player_name% permission set dm.farma9"
+    - "[console] lp user %player_name% permission unset dm.farma8"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 500000"
+    - "[console] lp user %player_name% permission set betterfarming.total.9"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.8"    
+    - "[console] lp user %player_name% permission set dm.farma9"
+    - "[console] lp user %player_name% permission unset dm.farma8"       
+
+#----
+
+  'farma10-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 4
+    display_name: "&8[&c&lExtra Farma - 10&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, desátá "
+    - "&7slot tě vyjde na: &c1000000$ "
+    - ""
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 40 "
+    - ""    
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma9
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1000000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma9   
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 40'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 40'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 40'         
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1000000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma9
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 40'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 40'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 40'              
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1000000"
+    - "[console] lp user %player_name% permission set betterfarming.total.10"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.9"    
+    - "[console] lp user %player_name% permission set dm.farma10"
+    - "[console] lp user %player_name% permission unset dm.farma9"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1000000"
+    - "[console] lp user %player_name% permission set betterfarming.total.10"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.9"    
+    - "[console] lp user %player_name% permission set dm.farma10"
+    - "[console] lp user %player_name% permission unset dm.farma9"                 
+
+
+#----
+
+  'farma11-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 3
+    display_name: "&8[&c&lExtra Farma - 11&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, jedenáctá "
+    - "&7slot tě vyjde na: &c1500000$ "
+    - "" 
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 45 "
+    - ""    
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma10
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1500000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma10  
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 45'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 45'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 45'              
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 1500000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma10
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 45'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 45'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 45'             
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1500000"
+    - "[console] lp user %player_name% permission set betterfarming.total.11"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.10"    
+    - "[console] lp user %player_name% permission set dm.farma11"
+    - "[console] lp user %player_name% permission unset dm.farma10"                   
+
+    right_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 1500000"
+    - "[console] lp user %player_name% permission set betterfarming.total.11"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.10"    
+    - "[console] lp user %player_name% permission set dm.farma11"
+    - "[console] lp user %player_name% permission unset dm.farma10"          
+
+
+#----
+
+  'farma12-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 2
+    display_name: "&8[&c&lExtra Farma - 12&8]" 
+    lore:
+    - ''
+    - '&7Potřebuješ si zakoupit další Farmu? '
+    - "&7Pak jsi na správném místě, dvanáctá "
+    - "&7slot tě vyjde na: &c2000000$ "
+    - "" 
+    - "&7Zároveň potřebuješ &cKopání&7, "
+    - "&cFarmaření&7 a &cDřevorubectví&7 "
+    - "&7na levelu:&c 50 "
+    - ""    
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma11
+         
+    right_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 2000000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma11
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 50'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 50'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 50'             
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_requirement:
+     requirements:
+      farmapenize:
+       type: javascript
+       expression: '%Cmi_user_balance% >= 2000000'
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma11
+      level: 
+       type: javascript
+       expression: '%ecoskills_farming% >= 50'     
+      leve1: 
+       type: javascript
+       expression: '%ecoskills_woodcutting% >= 50'  
+      level2: 
+       type: javascript
+       expression: '%ecoskills_mining% >= 50'                   
+     deny_commands:
+     - "[sound] BLOCK_NOTE_BLOCK_BASS"
+     - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &7Toto si nemůžeš teď koupit."  
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 2000000"
+    - "[console] lp user %player_name% permission set betterfarming.total.12"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.11"    
+    - "[console] lp user %player_name% permission set dm.farma12"
+    - "[console] lp user %player_name% permission unset dm.farma11"                   
+
+    left_click_commands:
+    - "[refresh]"  
+    - "[sound] block_enchantment_table_use"
+    - "[message] &7&l[&e&lHircine.cz&7&l] &8&l» &aZakoupil jsi si další farmu!" 
+    - "[console] money take %player_name% 2000000"
+    - "[console] lp user %player_name% permission set betterfarming.total.12"   
+    - "[console] lp user %player_name% permission unset betterfarming.total.11"    
+    - "[console] lp user %player_name% permission set dm.farma12"
+    - "[console] lp user %player_name% permission unset dm.farma11"    
+
+#----
+
+  'farma13-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5NWFkM2YzN2JiMzIzNzg1ZjhkNjgxNjc2M2U1YTczOWUyODE0ZDYxMWE3YWI0YWZmZjk3NmY5MTcyOWZhZiJ9fX0=
+    slot: 10
+    priority: 1 
+    display_name: "&8[&c&lExtra Farma - 13&8]" 
+    lore:
+    - ''
+    - '&7Momentální limit je '
+    - "&712 farem na hráče. "
+    - "" 
+    view_requirement:
+     requirements:
+      farmapermisse:
+       type: 'has permission'
+       permission: dm.farma12
+         
+
+  'Sklo':
+    material: GRAY_STAINED_GLASS_PANE
+    slots: [0,1,2,3,4,5,6,7,8,9,17,18,26,27,28,29,33,34,35,41,42,43,39,38,37,11,12,13,14,15,16,20,21,22,23,24,30,31,32,33]
+    display_name: ' '

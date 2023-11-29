@@ -1,0 +1,26 @@
+menu_title: 'Orichalcum Hoe'
+inventory_type: "WORKBENCH"
+items:
+  'Orichalcum_Hoe':
+    material: golden_Hoe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#DFBB90Orichalcum Hoe"
+    lore: [] 
+  'Orichalcum_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:7  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 1
+    display_name: "&#DFBB90Orichalcum Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

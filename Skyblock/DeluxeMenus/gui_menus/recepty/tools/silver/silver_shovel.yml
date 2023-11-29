@@ -1,0 +1,25 @@
+menu_title: 'Silver Shovel'
+inventory_type: "WORKBENCH"
+items:
+  'Silver_Shovel':
+    material: iron_shovel
+    hide_attributes: true
+    slot: 0
+    display_name: "&#C0C0C0Silver Shovel"
+    lore: [] 
+  'Silver_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:8  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    display_name: "&#C0C0C0Silver Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 

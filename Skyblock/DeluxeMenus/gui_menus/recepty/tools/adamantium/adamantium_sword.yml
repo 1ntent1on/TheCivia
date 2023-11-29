@@ -1,0 +1,24 @@
+menu_title: 'Adamantium Sword'
+inventory_type: "WORKBENCH"
+items:
+  'Adamantium_sword':
+    material: iron_sword
+    hide_attributes: true
+    slot: 0
+    display_name: "&#586056Adamantium Sword"
+    lore: [] 
+  'Adamantium_ingot':
+    material: brick
+    hide_attributes: true
+    nbt_int: CustomModelData:1  
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1    
+    slots:
+    - 2
+    - 5
+    display_name: "&#586056Adamantium Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slot: 8   

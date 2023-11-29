@@ -1,0 +1,27 @@
+menu_title: 'Adamantium Axe'
+inventory_type: "WORKBENCH"
+items:
+  'Adamantium_axe':
+    material: iron_axe
+    hide_attributes: true
+    slot: 0
+    display_name: "&#586056Adamantium Axe"
+    lore: [] 
+  'Adamantium_ingot':
+    material: brick
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - DURABILITY;1
+    nbt_int: CustomModelData:1  
+    slots:
+    - 2
+    - 1
+    - 4
+    display_name: "&#586056Adamantium Ingot"
+    lore: []     
+  'Stick':
+    material: stick
+    slots:
+    - 8
+    - 5 
