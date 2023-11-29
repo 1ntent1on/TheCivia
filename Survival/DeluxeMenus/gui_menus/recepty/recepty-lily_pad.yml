@@ -1,0 +1,12 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: lily_pad
+    slot: 0
+  'diamond':
+    material: vine
+    slots:
+    - 4
+    - 6
+    - 8

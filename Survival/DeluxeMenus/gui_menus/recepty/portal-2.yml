@@ -1,0 +1,25 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: feather
+    display_name: "&8[&c&lKlíč k portálu&8]"    
+    lore:
+    - "&7Umožní ti upravovat "
+    - "&7tvé portály. "
+    slot: 0
+  'diamond':
+    material: redstone
+    slots:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 9
+  'diamond2':
+    material: feather
+    slots:
+    - 5 

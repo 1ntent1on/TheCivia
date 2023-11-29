@@ -1,0 +1,26 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: gold_nugget
+    display_name: "&8[&c&lTvořič portálu&8]"       
+    lore:
+    - "&7Klikni s tímto itemem na "
+    - "&7rám portálu, která obsahuje "
+    - "&7alespoň &c2 emerald blocky&7."
+    slot: 0
+  'diamond':
+    material: redstone
+    slots:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 9
+  'diamond2':
+    material: gold_nugget
+    slots:
+    - 5

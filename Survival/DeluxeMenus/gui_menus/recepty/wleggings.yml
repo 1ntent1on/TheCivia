@@ -1,0 +1,17 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: leather_leggings
+    display_name: "&#004559Warden Leggings"
+    hide_attributes: true
+    model_data: 2
+    slot: 0
+  'diamond':
+    material: brick
+    display_name: "&#004659Warden Ingot"
+    model_data: 1
+    slots:
+    - 1-4
+    - 6-7
+    - 9

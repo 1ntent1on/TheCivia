@@ -1,0 +1,760 @@
+menu_title: "&8▶ &0Playtime Odměny - 1 &8◀"
+
+size: 54
+
+items:
+
+
+
+  '1-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 0
+    display_name: "&8[&c&lOdměna za 1H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPostel&7, &c5000&7, &cPlaytime klíč&7 a &c5x Playtime Token&7. "
+    - ""
+
+  '1-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 0
+    display_name: "&8[&c&lOdměna za 1H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPostel&7, &c5000&7, &cPlaytime klíč&7 a &c5x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 3600'    
+
+
+
+  '2-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 9
+    display_name: "&8[&c&lOdměna za 2H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPlaytime klíč&7. "
+    - ""
+
+  '2-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 9
+    display_name: "&8[&c&lOdměna za 2H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPlaytime klíč&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 7200'   
+
+
+  '3-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 18
+    display_name: "&8[&c&lOdměna za 5H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime klíč&7 a &c+ 1 Land členství&7. "
+    - ""
+
+  '3-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 18
+    display_name: "&8[&c&lOdměna za 5H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime klíč&7 a &c+ 1 Land členství&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 18000'   
+
+
+
+  '4-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 27
+    display_name: "&8[&c&lOdměna za 10H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7 a &c+ 5 Land Chunků&7. "
+    - ""
+
+  '4-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 27
+    display_name: "&8[&c&lOdměna za 10H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7 a &c+ 5 Land Chunků&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 36000'   
+
+
+
+  '5-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 28
+    display_name: "&8[&c&lOdměna za 24H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c20000&7, &cPlaytime klíč&7 a &c1x Playtime Token&7. "
+    - ""
+
+  '5-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 28
+    display_name: "&8[&c&lOdměna za 24H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c20000&7, &cPlaytime klíč&7 a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 86400'   
+
+
+  '6-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 29
+    display_name: "&8[&c&lOdměna za 30H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cLand Členství&7 a &cPlaytime klíč&7. "
+    - ""
+
+  '6-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 29
+    display_name: "&8[&c&lOdměna za 30H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cLand Členství&7 a &cPlaytime klíč&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 108000'   
+
+
+
+  '7-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 20
+    display_name: "&8[&c&lOdměna za 44H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000 &7a &cSethome&7. "
+    - ""
+
+  '7-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 20
+    display_name: "&8[&c&lOdměna za 44H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000 &7a &cSethome&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 158400'  
+
+
+  '8-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 11
+    display_name: "&8[&c&lOdměna za 48H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5x Playtime Klíč&7 a &c1x Playtime Token&7. "
+    - ""
+
+  '8-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 11
+    display_name: "&8[&c&lOdměna za 48H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5x Playtime Klíč&7 a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 172800'  
+
+
+
+  '9-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 2
+    display_name: "&8[&c&lOdměna za 55H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c+ 5 Land Chunků&7. "
+    - ""
+
+  '9-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 2
+    display_name: "&8[&c&lOdměna za 55H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c+ 5 Land Chunků&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 198000'  
+
+
+
+
+
+  '10-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 3
+    display_name: "&8[&c&lOdměna za 65H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c10000&7, &cPlaytime klíč&7. "
+    - ""
+
+  '10-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 3
+    display_name: "&8[&c&lOdměna za 65H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c10000&7, &cPlaytime klíč&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 234000'  
+
+
+  '11-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 4
+    display_name: "&8[&c&lOdměna za 75H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime klíč&7, &c1x PlaytimeToken&7. "
+    - ""
+
+  '11-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 4
+    display_name: "&8[&c&lOdměna za 75H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime klíč&7, &c1x PlaytimeToken&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 270000'  
+
+
+
+  '12-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 13
+    display_name: "&8[&c&lOdměna za 80H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c+ 5 Land Chunků&7, &c+ Playtime Klíč&7. "
+    - ""
+
+  '12-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 13
+    display_name: "&8[&c&lOdměna za 80H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c+ 5 Land Chunků&7, &c+ Playtime Klíč&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 288000'  
+
+
+
+  '13-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 22
+    display_name: "&8[&c&lOdměna za 90H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7 a + &cLand Členství&7. "
+    - ""
+
+  '13-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 22
+    display_name: "&8[&c&lOdměna za 90H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7 a + &cLand Členství&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 324000'  
+
+
+
+
+
+  '14-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 31
+    display_name: "&8[&c&lOdměna za 100H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5x Playtime klíč&7, &cLimit obchodů navýšen na 100 " 
+    - "&7a &c1x Playtime Token&7. "
+    - ""
+
+  '14-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 31
+    display_name: "&8[&c&lOdměna za 100H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5x Playtime klíč&7, &cLimit obchodů navýšen na 100 " 
+    - "&7a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 360000'  
+
+
+
+
+  '15-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 32
+    display_name: "&8[&c&lOdměna za 120H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c1x Playtime klíč&7, &cDalší sethome&7, &c1x Playtime Token&7. " 
+    - ""
+
+
+  '15-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 32
+    display_name: "&8[&c&lOdměna za 120H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c1x Playtime klíč&7, &cDalší sethome&7, &c1x Playtime Token&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 432000'  
+
+
+
+  '16-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 33
+    display_name: "&8[&c&lOdměna za 140H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7,&c + 5 Land Chunků&7. " 
+    - ""
+    
+
+  '16-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 33
+    display_name: "&8[&c&lOdměna za 140H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7,&c + 5 Land Chunků&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 504000'  
+
+
+
+  '17-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 24
+    display_name: "&8[&c&lOdměna za 150H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPlaytime Klíč&7,&c + 5 Land Chunků&7, &c1x Playtime Token&7. " 
+    - ""
+    
+
+  '17-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 24
+    display_name: "&8[&c&lOdměna za 150H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cPlaytime Klíč&7,&c + 5 Land Chunků&7, &c1x Playtime Token&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 540000'  
+
+
+
+  '18-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 15
+    display_name: "&8[&c&lOdměna za 175H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime Klíč&7, &c+ 10000&7 a &c1x Playtime Token&7. " 
+    - ""
+    
+
+  '18-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 15
+    display_name: "&8[&c&lOdměna za 175H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x Playtime Klíč&7, &c+ 10000&7 a &c1x Playtime Token&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 630000'  
+
+
+  '19-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 6
+    display_name: "&8[&c&lOdměna za 200H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c&7/workbench, &c+ extra 25 obchodů&7 a &c1x Playtime Token&7. " 
+    - ""
+    
+
+  '19-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 6
+    display_name: "&8[&c&lOdměna za 200H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c&7/workbench, &c+ extra 25 obchodů&7 a &c1x Playtime Token&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 720000'  
+
+
+
+
+  '20-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 7
+    display_name: "&8[&c&lOdměna za 225H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x playtime klíč&7, &c+ extra 10 chunků do landu &7a "
+    - "&c1x Playtime Token&7. " 
+    - ""
+    
+
+  '20-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 7
+    display_name: "&8[&c&lOdměna za 225H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x playtime klíč&7, &c+ extra 10 chunků do landu &7a "
+    - "&c1x Playtime Token&7. " 
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 810000'  
+
+
+
+  '21-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 8
+    display_name: "&8[&c&lOdměna za 250H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cDalší sethome&7, &c+ 15000&7 a &c1x Playtime Token&7. "
+    - ""
+    
+
+  '21-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 8
+    display_name: "&8[&c&lOdměna za 250H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cDalší sethome&7, &c+ 15000&7 a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 900000'  
+
+
+
+  '22-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 17
+    display_name: "&8[&c&lOdměna za 275H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7, &c+ 1x playtime klíč&7 a &c1x Playtime Token&7. "
+    - ""
+    
+
+  '22-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 17
+    display_name: "&8[&c&lOdměna za 275H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7, &c+ 1x playtime klíč&7 a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 990000'  
+
+
+  '23-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 26
+    display_name: "&8[&c&lOdměna za 300H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c/stonecutter&7, &c+ extra 25 obchodů&7, &c+ 1 Land členství&7 a "
+    - "&c1x PlaytimeToken&7. "
+    - ""
+    
+
+  '23-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 26
+    display_name: "&8[&c&lOdměna za 300H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c/stonecutter&7, &c+ extra 25 obchodů&7, &c+ 1 Land členství&7 a "
+    - "&c1x PlaytimeToken&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 1080000'  
+
+
+
+  '24-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 35
+    display_name: "&8[&c&lOdměna za 325H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x playtime klíč&7, &c+ extra 15 chunků do landu&7 a "
+    - "&c1x Playtime Token&7. "
+    - ""
+    
+
+  '24-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 35
+    display_name: "&8[&c&lOdměna za 325H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c2x playtime klíč&7, &c+ extra 15 chunků do landu&7 a "
+    - "&c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 1170000'  
+
+
+
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] playtime2'   
+
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] playtime2'        
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

@@ -1,0 +1,25 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: leather_leggings
+    display_name: "&#CC00FADragon Leggings"
+    hide_attributes: true
+    model_data: 1
+    slot: 0
+  'diamond':
+    material: brick
+    display_name: "&#CC00FADragon Ingot"
+    model_data: 2
+    slots:
+    - 2
+    - 4
+    - 6-7
+    - 9
+  'diamond2':
+    material: flint
+    display_name: "&#CC00FADragon Tooth"
+    model_data: 2
+    slots:
+    - 1
+    - 3

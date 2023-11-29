@@ -1,0 +1,24 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: brick
+    display_name: "&#004559Warden Ingot"
+    model_data: 1
+    slot: 0
+  'diamond':
+    material: gunpowder
+    display_name: "&#004659Warden Fragment"
+    model_data: 1
+    slots:
+    - 1
+    - 2
+    - 3
+    - 4
+  'diamond2':
+    material: echo_shard
+    slots:
+    - 6
+    - 7
+    - 8
+    - 9

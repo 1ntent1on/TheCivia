@@ -1,0 +1,25 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: brain_coral_block
+    amount: 2
+    slot: 0
+  'diamond':
+    material: brain_coral_fan
+    slots:
+    - 1
+    - 3
+    - 7
+    - 9
+  'diamond2':
+    material: brain_coral
+    slots:
+    - 2
+    - 4
+    - 6
+    - 8
+  'diamond222':
+    material: gravel
+    slots:
+    - 5

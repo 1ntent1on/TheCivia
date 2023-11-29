@@ -1,0 +1,23 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: leather_boots
+    display_name: "&#CC00FADragon Boots"
+    hide_attributes: true
+    model_data: 1
+    slot: 0
+  'diamond':
+    material: brick
+    display_name: "&#CC00FADragon Ingot"
+    model_data: 2
+    slots:
+    - 4
+    - 6
+  'diamond2':
+    material: flint
+    display_name: "&#CC00FADragon Tooth"
+    model_data: 1
+    slots:
+    - 1
+    - 3

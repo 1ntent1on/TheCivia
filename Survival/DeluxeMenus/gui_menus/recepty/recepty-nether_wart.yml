@@ -1,0 +1,11 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: nether_wart
+    amount: 9
+    slot: 0
+  'diamond':
+    material: nether_wart_block
+    slots:
+    - 5

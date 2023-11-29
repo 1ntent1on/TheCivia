@@ -1,0 +1,11 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: quartz
+    amount: 4
+    slot: 0
+  'diamond':
+    material: quartz_block
+    slots:
+    - 5

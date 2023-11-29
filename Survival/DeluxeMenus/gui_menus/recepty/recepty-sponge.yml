@@ -1,0 +1,27 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: sponge
+    slot: 0
+  'diamond':
+    material: yellow_wool
+    slots:
+    - 2
+    - 4
+    - 6
+    - 8
+  'diamond2':
+    material: ink_sac
+    slots:
+    - 5
+  'diamond3':
+    material: prismarine_crystals
+    slots:
+    - 1
+    - 9
+  'diamond4':
+    material: prismarine_shard
+    slots:
+    - 3
+    - 7

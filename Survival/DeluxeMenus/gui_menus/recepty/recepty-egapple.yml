@@ -1,0 +1,15 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: enchanted_golden_apple
+    slot: 0
+  'diamond':
+    material: golden_apple
+    slots:
+    - 5
+  'diamond2':
+    material: gold_block
+    slots:
+    - 1-4
+    - 6-9   

@@ -1,0 +1,21 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: brick
+    display_name: "&#CC00FADragon Ingot"
+    hide_attributes: true
+    model_data: 2
+    slot: 0
+  'diamond':
+    material: prismarine_shard
+    display_name: "&#CC00FADragon Shard"
+    model_data: 1
+    slots:
+    - 1-4
+  'diamond2':
+    material: amethyst_shard
+    display_name: "&#CC00FADragon Fragment"
+    model_data: 1
+    slots:
+    - 5-8

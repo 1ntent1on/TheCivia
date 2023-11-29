@@ -1,0 +1,140 @@
+menu_title: "&8▶ &0Playtime Odměny - 2 &8◀"
+
+size: 54
+
+items:
+
+
+
+  '1-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 0
+    display_name: "&8[&c&lOdměna za 350H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cDalší sethome&7, &c+ 15000&7 a &c1x Playtime Token&7. "
+    - ""
+
+  '1-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 0
+    display_name: "&8[&c&lOdměna za 350H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&cDalší sethome&7, &c+ 15000&7 a &c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 1260000'    
+
+
+
+  '2-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 9
+    display_name: "&8[&c&lOdměna za 375H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7, &c1x playtime klíč&7 a &c1x PlaytimeToken&7. "
+    - ""
+
+  '2-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 9
+    display_name: "&8[&c&lOdměna za 375H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&c5000&7, &c1x playtime klíč&7 a &c1x PlaytimeToken&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 1350000'   
+
+
+  '3-1':
+    material: RED_STAINED_GLASS_PANE
+    priority: 1
+    slot: 18
+    display_name: "&8[&c&lOdměna za 400H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&ctpahere&7, &c+ extra 25 obchodů&7, &c+ 1 Land členství "
+    - "&c1x Playtime Token&7. "
+    - ""
+
+  '3-2':
+    material: LIME_STAINED_GLASS_PANE
+    priority: 0
+    slot: 18
+    display_name: "&8[&c&lOdměna za 400H&8]"
+    lore:
+    - ''
+    - '&7Obdržíš:  '
+    - "&ctpahere&7, &c+ extra 25 obchodů&7, &c+ 1 Land členství "
+    - "&c1x Playtime Token&7. "
+    - ""
+    view_requirement:
+     requirements:
+      cobble:
+       type: javascript
+       expression: '%cmi_user_playtime_secondst% >= 1440000'   
+
+
+
+
+
+
+
+
+
+  'dalsi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+    hide_attributes: true
+    slot: 53
+    display_name: "&8[&c&lDalší Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na další stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] playtime1'   
+
+  'predchozi-strana':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    hide_attributes: true
+    slot: 45
+    display_name: "&8[&c&lPředchozí Stránka&8]"
+    lore:
+    - ''
+    - '&7Klikni pro přesun na předchozí stránku. '
+    - ""
+    click_commands:
+    - '[openmenu] playtime1'        
+
+
+
+
+
+
+
+
+
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53

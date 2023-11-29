@@ -1,0 +1,20 @@
+menu_title: 'Crafting'
+inventory_type: "WORKBENCH"
+items:
+  'DHA':
+    material: netherite_shovel
+    display_name: "&#CC00FADragon Shovel"
+    hide_attributes: true
+    model_data: 1
+    slot: 0
+  'diamond':
+    material: flint
+    display_name: "&#CC00FADragon Tooth"
+    model_data: 1
+    slots:
+    - 2
+  'diamond3':
+    material: stick
+    slots:
+    - 5
+    - 8    
